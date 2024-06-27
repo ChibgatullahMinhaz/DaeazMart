@@ -1,0 +1,24 @@
+/* Reset code comment start */
+:root{
+    --primary-color:blue;
+}
+*{
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+/* reset code End */
+
+
