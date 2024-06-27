@@ -1,6 +1,7 @@
 /* Reset code comment start */
 :root{
     --primary-color:blue;
+    --transition: all .3s ;
 }
 *{
     box-sizing: border-box;
@@ -19,6 +20,44 @@ img{
     width: 100px;
     height: auto;
 }
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /* reset code End */
 
+/* navbar start here  */
+nav{
+    background-color: #ddd;
+    font-family: fantasy;
 
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav_upper{
+    min-height: 100vh;
+    background-color: blueviolet;
+    padding: 1rem 0;
+}
+.nav_list{
+    transition: var(--transition);
+}
+.nav_list:hover{
+    text-decoration: overline;
+    color: black;
+}
+.nav_link{
+    color: white;
+    transition: var(--transition);
+}
+.nav_link:hover{
+    color: black;
+    transition: var(--transition);
+}
+
+
+/* navbar Ends here  */
