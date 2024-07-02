@@ -130,6 +130,15 @@ nav{
 }
 /* ends sub catg */
 /* navbar Ends here  */
+/* baner start here */
+.Banner_title{
+    background-color: #ddd;
+    opacity: .7;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+/* banner ends here  */
 /*  footer starts here*/
 .footer{
     background-color: #1A1A1A;
@@ -151,6 +160,7 @@ nav{
     color: aquamarine;
 
 }
+/* footer ends here */
 
 /* Responsiveness start here */
 /* @media (max-width:992px){
