@@ -26,6 +26,11 @@
     width: 100px;
     height: auto;
   }
+  .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .flex-space-around {
     display: flex;
     justify-content: space-around;
@@ -35,4 +40,6 @@
     color: red;
 }
   /* common code ends here */
-
+.card{
+    display: flex;
+}
