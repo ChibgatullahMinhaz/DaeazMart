@@ -138,6 +138,9 @@ margin: 0 auto;
 /* ends sub catg */
 /* navbar Ends here  */
 /* baner start here */
+.Banner{
+    background-color: rgb(240, 139, 139);
+}
 .Banner_title{
     background-color: #f8f4f4;
     opacity: .7;
