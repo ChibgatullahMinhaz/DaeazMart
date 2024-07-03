@@ -166,6 +166,9 @@ nav {
 .feautes i {
   font-size: 1.4rem;
 }
+.feautes:hover{
+    cursor: pointer;
+}
 
 /* banner ends here  */
 /*  footer starts here*/
