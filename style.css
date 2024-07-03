@@ -71,7 +71,9 @@ nav{
 .nav_upper{
     max-height: 100vh;
     background-color: rgb(221, 218, 225);
-    padding: 1rem 0;
+    padding: .9rem;
+text-align: center;
+margin: 0 auto;
 }
 .nav_list{
 
@@ -93,7 +95,7 @@ nav{
 }
 .branding{
     font-family: fantasy;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 .cart{
@@ -105,9 +107,11 @@ nav{
 /* start nav lower design */
 .nav_lower{
     background-color:#fff;
-    padding: 30px 60px 20px 60px ;
+    padding: 1rem;
     text-transform: capitalize;
     opacity:1;
+    text-align: center;
+    margin: 0 auto;
     position: relative;
 
 }
