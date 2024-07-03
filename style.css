@@ -8,7 +8,8 @@
     --fontSize:1.2rem;
     --transition: all 1s ;
     --padding:4px;
-
+    --banerColor:rgb(241, 241, 245);
+    --feautesColor:  rgb(240, 139, 139);
 }
 *{
     box-sizing: border-box;
@@ -139,7 +140,7 @@ margin: 0 auto;
 /* navbar Ends here  */
 /* baner start here */
 .Banner{
-    background-color: rgb(240, 139, 139);
+    background-color: var(--banerColor);
 }
 .Banner_title{
     background-color: #f8f4f4;
@@ -156,7 +157,21 @@ margin: 0 auto;
     margin: 0 auto;    
 }
 .feauturse{
+    margin: 0 auto;
+    text-align: center;
+    font-size: .5rem;
     
+}
+.feautes{
+    background-color:var(--feautesColor);
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.feautes i{
+    font-size: 1.4rem;
 }
 
 /* banner ends here  */
