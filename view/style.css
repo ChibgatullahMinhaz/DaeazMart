@@ -184,6 +184,9 @@ nav {
     justify-content: flex-end;
     margin-top: 30px;
 }
+.connectUS:hover{
+  cursor: pointer;
+}
 .connectUS i {
     margin: 5px;
 }
