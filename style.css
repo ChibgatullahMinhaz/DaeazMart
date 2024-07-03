@@ -138,16 +138,12 @@ nav{
     background-color: #f8f4f4;
     opacity: .7;
     font-size: 1.2rem;
-    padding: 1px;
+    color: #1A1A1A;
+    font-weight: bolder;
 }
 .carousel{
     max-width:70%;
-    margin: 0 auto;
-    border-radius: 10px;
-    
-}
-.pre{
-    background-color: black;
+    margin: 0 auto;    
 }
 
 /* banner ends here  */
