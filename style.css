@@ -140,9 +140,11 @@ nav{
     font-size: 1.2rem;
     color: #1A1A1A;
     font-weight: bolder;
+    margin-bottom: 1%;
 }
 .carousel{
-    max-width:70%;
+    margin-top: 10px;
+    max-width:80%;
     margin: 0 auto;    
 }
 
