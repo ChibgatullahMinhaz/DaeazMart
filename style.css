@@ -33,26 +33,11 @@ img {
   align-items: center;
 }
 .footer_cart {
-  padding: 1rem;
-  text-align: start;
-  line-height: 20px;
+  padding: .6rem;
+  line-height: 23px;
 }
-.sub_footer {
-  margin-top: 20px;
-  align-items: center;
-  padding-left: 5px;
-  margin-bottom: 10px;
-}
-.label {
-  font-size: 1.2rem;
-}
-#label_for {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #fff;
-}
+
+
 /* reset code End */
 
 /* navbar start here  */
@@ -169,13 +154,13 @@ nav {
 .feautes:hover{
     cursor: pointer;
 }
-
 /* banner ends here  */
 /*  footer starts here*/
 .footer {
   background-color: #1a1a1a;
   color: #ddd;
   margin-bottom: 0;
+  position: relative;
 }
 .footer_link {
   color: #fff;
@@ -183,14 +168,13 @@ nav {
   font-weight: bolder;
   font-size: 1.2rem;
 }
-.Email_for {
-  margin: 0;
-  padding: 0;
-  font-size: 0.6rem;
-}
 .sub_footer_link {
   color: aquamarine;
 }
+.footer_cart{
+    margin-top: 40px;
+}
+
 /* footer ends here */
 
 /* Responsiveness start here */
