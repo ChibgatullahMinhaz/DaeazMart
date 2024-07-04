@@ -90,15 +90,18 @@ nav {
 .nav_link:hover {
   transition: var(--transition);
   color: var(--blackColor);
-  font-weight: var(--font-weight);
 }
-
 .branding {
   font-family: fantasy;
   font-size: 1.5rem;
   text-transform: uppercase;
+font-weight: bold;
 }
-
+.branding:hover{
+  font-size: 1.5rem;
+  color: var(--footerTextColor);
+  cursor: pointer;
+  }
 .cart {
   margin-right: -15%;
 }
