@@ -10,6 +10,8 @@
   --padding: 4px;
   --banerColor: rgb(241, 241, 245);
   --feautesColor: rgb(240, 139, 139);
+  --footerTextColor:rgb(206, 135, 48);
+  --orange:orange;
 }
 * {
   box-sizing: border-box;
@@ -173,8 +175,17 @@ nav {
   font-weight: bolder;
   font-size: 1.2rem;
 }
+.footer_link:hover{
+  text-decoration: none;
+  color: var(--orange);
+}
 .sub_footer_link {
   color: aquamarine;
+
+}
+.sub_footer_link:hover{
+  text-decoration: none;
+  color: var(--footerTextColor);
 }
 .footer_cart{
     margin-top: 40px;
@@ -223,7 +234,7 @@ text-transform: capitalize;
 }
 .subscribe-newsletter a:hover{
   text-decoration: none;
-  color: rgb(206, 135, 48);
+  color: var(--footerTextColor);
 }
 
 /* footer ends here */
