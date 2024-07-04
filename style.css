@@ -209,6 +209,22 @@ width: 20px;
 margin: 5px;
 
 }
+.subscribe-newsletter{
+  display: block;
+}
+.email_input{
+  padding: 5px;
+}
+.subscribe-newsletter a{
+  background-color: #fff;
+padding: 8px;
+color: #1a1a1a;
+text-transform: capitalize;
+}
+.subscribe-newsletter a:hover{
+  text-decoration: none;
+  color: rgb(206, 135, 48);
+}
 
 /* footer ends here */
 
