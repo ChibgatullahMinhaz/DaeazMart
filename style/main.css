@@ -1,7 +1,7 @@
 :root {
   --padding: 1rem;
   --padding1: 0.3rem;
-  --box-shadow: 2px 2px 3px 3px;
+  --box-shadow: 1px 1px 1px 3px gray;
   --transition: all 1s;
   --borderRedius: 10px;
 }
