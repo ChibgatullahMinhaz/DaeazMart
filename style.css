@@ -10,9 +10,10 @@
   --padding: 4px;
   --banerColor: rgb(241, 241, 245);
   --feautesColor: rgb(240, 139, 139);
-  --footerTextColor:rgb(206, 135, 48);
-  --orange:orange;
+  --footerTextColor: rgb(206, 135, 48);
+  --orange: orange;
 }
+
 * {
   box-sizing: border-box;
   list-style: none;
@@ -21,24 +22,28 @@
   text-decoration: none;
   outline: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
-.flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 img {
   width: 100px;
   height: auto;
 }
+
 .flex-space-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .footer_cart {
   padding: .6rem;
   line-height: 23px;
@@ -58,6 +63,7 @@ nav {
   opacity: 0.9;
   z-index: 100;
 }
+
 .nav_upper {
   max-height: 100vh;
   background-color: rgb(221, 218, 225);
@@ -66,33 +72,41 @@ nav {
   margin: 0 auto;
   border-bottom: #fff 1px solid;
 }
+
 .nav_list {
   transition: var(--transition);
 }
+
 .nav_list:hover {
   text-decoration: underline;
   color: black;
 }
+
 .nav_link {
   color: var(--primary-color);
   transition: var(--transition);
 }
+
 .nav_link:hover {
   transition: var(--transition);
   color: var(--blackColor);
   font-weight: var(--font-weight);
 }
+
 .branding {
   font-family: fantasy;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+
 .cart {
   margin-right: -15%;
 }
+
 .SingUp {
   margin-left: -15%;
 }
+
 /* start nav lower design */
 .nav_lower {
   padding: 1rem;
@@ -114,6 +128,7 @@ nav {
   top: 45px;
   transition: var(--transition);
 }
+
 .sub_catg .nav_list {
   padding: var(--padding);
 }
@@ -122,12 +137,14 @@ nav {
   display: block;
   transition: var(--transition);
 }
+
 /* ends sub catg */
 /* navbar Ends here  */
 /* baner start here */
 .Banner {
   background-color: var(--banerColor);
 }
+
 .Banner_title {
   background-color: var(--feautesColor);
   opacity: 0.7;
@@ -138,16 +155,19 @@ nav {
   background-image: url("img/Desktop.jpg");
   background-repeat: no-repeat;
 }
+
 .carousel {
   margin-top: 10px;
   max-width: 80%;
   margin: 0 auto;
 }
+
 .feauturse {
   margin: 0 auto;
   text-align: center;
   font-size: 0.5rem;
 }
+
 .feautes {
   padding: 10px;
   margin: 0 auto;
@@ -155,26 +175,31 @@ nav {
   margin-bottom: 20px;
   border-radius: 5px;
 }
+
 .feautes i {
   font-size: 1.4rem;
 }
-.feautes:hover{
-    cursor: pointer;
+
+.feautes:hover {
+  cursor: pointer;
 }
+
 /* banner ends here  */
 
 
 /* main content start here  */
-main{
+main {
   padding: 4rem 0;
   min-height: 80vh;
 }
-.section_title{
-  font-family:'Times New Roman', Times, serif;
+
+.section_title {
+  font-family: 'Times New Roman', Times, serif;
   text-transform: capitalize;
   font-weight: bold;
 }
-.sidebar{
+
+.sidebar {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -183,13 +208,16 @@ main{
   align-self: flex-start;
 
 }
-.list_item{
+
+.list_item {
   line-height: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.main-content{
-flex: 4;
+
+.main-content {
+  flex: 4;
 }
+
 /* main content ends here  */
 
 
@@ -201,70 +229,88 @@ flex: 4;
   margin-bottom: 0;
   position: relative;
 }
+
 .footer_link {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 1.2rem;
 }
-.footer_link:hover{
+
+.footer_link:hover {
   text-decoration: none;
   color: var(--orange);
 }
+
 .sub_footer_link {
   color: aquamarine;
 
 }
-.sub_footer_link:hover{
+
+.sub_footer_link:hover {
   text-decoration: none;
   color: var(--footerTextColor);
 }
-.footer_cart{
-    margin-top: 40px;
+
+.footer_cart {
+  margin-top: 40px;
 }
-.connectUS{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
+
+.connectUS {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
 }
-.connectUS:hover{
+
+.connectUS:hover {
   cursor: pointer;
 }
+
 .connectUS i {
-    margin: 5px;
+  margin: 5px;
 }
-.connectUS h5{
-    font-size: .7rem;
+
+.connectUS h5 {
+  font-size: .7rem;
 }
-.payment_method{
-display: flex;
-justify-content: flex-end;
-margin-top: 20px;
+
+.payment_method {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
-.payment_method:hover{
-    cursor: pointer;
-    }
-.payment_method h5{
-    font-size: .7rem;
+
+.payment_method:hover {
+  cursor: pointer;
 }
-.payment_method img{
-width: 20px;
-margin: 5px;
+
+.payment_method h5 {
+  font-size: .7rem;
+}
+
+.payment_method img {
+  width: 20px;
+  margin: 5px;
 
 }
-.subscribe-newsletter{
+
+.subscribe-newsletter {
   display: block;
 }
-.email_input{
+
+.email_input {
   padding: 5px;
 }
-.subscribe-newsletter a{
+
+.subscribe-newsletter a {
   background-color: #fff;
-padding: 8px;
-color: #1a1a1a;
-text-transform: capitalize;
+  padding: 7px;
+  color: #1a1a1a;
+  text-transform: capitalize;
+  margin-left: -3px;
 }
-.subscribe-newsletter a:hover{
+
+.subscribe-newsletter a:hover {
   text-decoration: none;
   color: var(--footerTextColor);
 }
