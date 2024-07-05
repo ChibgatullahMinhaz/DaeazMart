@@ -178,6 +178,17 @@ main {
 .red{
   background-color: red;
 }
+.pagination{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pagination_button:hover{
+  background-color: darkblue;
+  color: yellow;
+
+}
+
 /* main content ends here  */
 @media (max-width:992px) {
   .products {
