@@ -106,6 +106,9 @@ main {
   margin-top: 1rem;
   justify-self: flex-start;
   margin-bottom: 0;
+  font-family: fantasy;
+  font-weight: 100;
+  
 }
 .product_name:hover{
  cursor: pointer;
@@ -133,7 +136,6 @@ main {
 }
 .buttons {
   display: flex;
-  max-width: 100%;
   justify-content: space-around;
 }
 .add_cart {

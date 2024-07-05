@@ -133,7 +133,7 @@ font-weight: bold;
 }
 
 .sub_catg .nav_list {
-  padding: var(--padding);
+  padding: .3rem;
 }
 
 .nav_list:hover .sub_catg {
