@@ -26,6 +26,7 @@ main {
   justify-content: center;
   gap: 1rem;
   align-self: flex-start;
+  margin-top: 90px;
 }
 .section_title {
   font-family: "Times New Roman", Times, serif;
