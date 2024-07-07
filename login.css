@@ -1,0 +1,43 @@
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .login-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+
+  .form-control label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-control input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .form-control input[type="submit"] {
+    background: #5cb85c;
+    color: white;
+    cursor: pointer;
+  }
+
+  .form-control input[type="submit"]:hover {
+    background: #4cae4c;
+  }
