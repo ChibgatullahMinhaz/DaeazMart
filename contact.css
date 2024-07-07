@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_setion {
+    width:100%;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 13px;
+    padding: 20px;
+}
+.contact_title{
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.contact_setion input{
+    width: 98%;
+    padding: .7%;
+    margin: 10px;
+    background: #fff;
+    border: #ddd;
+    border-radius: 10px;
+}
+.contact_setion textarea{
+width: 98%;
+color: #ddd;
+text-align: start;
+border: #ddd;
+position: relative;
+}
+.Submit{
+    margin: 1px;
+    background-color: orange;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    color: black;
+    transition: all .5s;
+}
+.Submit:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    border:1px solid greenyellow;
+}
