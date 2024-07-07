@@ -1,226 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- add favicon -->
-     <link rel="icon" type="image/x-icon" href="https://e7.pngegg.com/pngimages/621/196/png-clipart-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- add favicon -->
+  <link rel="icon" type="image/x-icon"
+    href="https://e7.pngegg.com/pngimages/621/196/png-clipart-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text.png">
 
-     <!-- link bootstrap here -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     <!-- bootstrap  link ends here  -->
- 
-     <!-- Font Awsome cdn  start here-->
-     <link
-       rel="stylesheet"
-       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-       crossorigin="anonymous"
-       referrerpolicy="no-referrer"
-     />
-    <link rel="stylesheet" href="style/style.css">
-    <title>Authenticate Telecom</title>
+  <!-- link bootstrap here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap  link ends here  -->
+
+  <!-- Font Awsome cdn  start here-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Authenticate Telecom</title>
 </head>
+
 <body>
-    <nav>
-        <!-- start Upper nav -->
-        <ul class="nav_upper flex-space-around">
-          <li class="nav_list branding">
-            <a href="index.html" class="nav_link">authenticate telecom</a>
-          </li>
-          <li class="nav_list">
-            <a href="" class="nav_link">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </li>
-          <li class="nav_list cart">
-            <a href="cart.html" class="nav_link"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-          </li>
-          <li class="nav_list singIn">
-            <a href="login.html" class="nav_link"> Login</a>
-          </li>
-          <li class="nav_list SingUp">
-            <a href="singUp.html" class="nav_link">
-              <i class="fa-solid fa-user-plus"></i
-            ></a>
-          </li>
-        </ul>
-        <!-- end Upper nav -->
-        <!-- Start Lower nav -->
-        <ul class="nav_lower container  flex-space-around">
-          <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
-          <li class="nav_list">
-            <a href="category.html" class="nav_link"
-              >category <i class="fa-solid fa-caret-down"></i>
-            </a>
-            <!-- sub nav start -->
-            <div class="sub_catg">
-              <ul>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >Laptop <i class="fa-solid fa-laptop fa-bounce"></i>
-                  </a>
-                </li>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >Desktop <i class="fa-solid fa-desktop fa-beat-fade"></i>
-                  </a>
-                </li>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >SmartPhone <i class="fa-solid fa-mobile fa-beat-fade"></i>
-                  </a>
-                </li>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >Tablet <i class="fa-solid fa-tablet fa-beat-fade"></i>
-                  </a>
-                </li>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >Headphone <i class="fa-solid fa-headphones fa-bounce"></i>
-                  </a>
-                </li>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >Ip Camera <i class="fa-solid fa-camera fa-shake"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- sub nav End -->
-          </li>
-          <li class="nav_list"><a href="shop.html" class="nav_link">Shop</a></li>
-          <li class="nav_list">
-            <a href="product.html" class="nav_link">product</a>
-          </li>
-          <li class="nav_list">
-            <a href="contact.html" class="nav_link"
-              >Contact <i class="fa-solid fa-caret-down"></i>
-            </a>
-            <!-- sub nav start -->
-            <div class="sub_catg contactDropdown">
-              <ul>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >Facebook <i class="fa-brands fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >Instagram <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="nav_list">
-                  <a href="#" class="nav_link"
-                    >WhatsApp <i class="fa-brands fa-whatsapp"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- sub nav End -->
-          </li>
-          <li class="nav_list">
-            <a href="about.html" class="nav_link">About</a>
-          </li>
-        </ul>
-        <!-- End Lower nav -->
-      </nav>
+  <nav>
+    <!-- start Upper nav -->
+    <ul class="nav_upper flex-space-around">
+      <li class="nav_list branding">
+        <a href="index.html" class="nav_link collections_desing">authenticate telecom</a>
+      </li>
+      <li class="nav_list">
+        <a href="" class="nav_link">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </li>
+      <li class="nav_list cart">
+        <a href="cart.html" class="nav_link"><i class="fa-solid fa-cart-shopping"></i></a>
+      </li>
+      <li class="nav_list singIn">
+        <a href="login.html" class="nav_link"> Login</a>
+      </li>
+      <li class="nav_list SingUp">
+        <a href="singUp.html" class="nav_link">
+          <i class="fa-solid fa-user-plus"></i></a>
+      </li>
+    </ul>
+    <!-- end Upper nav -->
+    <!-- Start Lower nav -->
+    <ul class="nav_lower container  flex-space-around">
+      <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+      <li class="nav_list">
+        <a href="category.html" class="nav_link">category <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <!-- sub nav start -->
+        <div class="sub_catg">
+          <ul>
+            <li class="nav_list">
+              <a href="#" class="nav_link">Laptop <i class="fa-solid fa-laptop fa-bounce"></i>
+              </a>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav_link">Desktop <i class="fa-solid fa-desktop fa-beat-fade"></i>
+              </a>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav_link">SmartPhone <i class="fa-solid fa-mobile fa-beat-fade"></i>
+              </a>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav_link">Tablet <i class="fa-solid fa-tablet fa-beat-fade"></i>
+              </a>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav_link">Headphone <i class="fa-solid fa-headphones fa-bounce"></i>
+              </a>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav_link">Ip Camera <i class="fa-solid fa-camera fa-shake"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- sub nav End -->
+      </li>
+      <li class="nav_list"><a href="shop.html" class="nav_link">Shop</a></li>
+      <li class="nav_list">
+        <a href="product.html" class="nav_link">product</a>
+      </li>
+      <li class="nav_list">
+        <a href="contact.html" class="nav_link">Contact <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <!-- sub nav start -->
+        <div class="sub_catg contactDropdown">
+          <ul>
+            <li class="nav_list">
+              <a href="#" class="nav_link">Facebook <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav_link">Instagram <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav_link">WhatsApp <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- sub nav End -->
+      </li>
+      <li class="nav_list">
+        <a href="about.html" class="nav_link">About</a>
+      </li>
+    </ul>
+    <!-- End Lower nav -->
+  </nav>
 
 
-         <!-- footer Start -->
-    <footer class="footer flex-space-around">
-      
-        <div class="connect_section ">
-          <h1 class="branding">authenticate telecom</h1>
-        <div class="">
-          <div class="connectUS">
-            <h5>Connect With US</h5>
+  <main class="container">
+    <h1 class="flex-center collections_desing ">Collections :</h1>
+
+    <div class="main-content  collections ">
+      <article class="Category-card card">
+        <img src="https://i5.walmartimages.com/seo/Restored-Dell-Optiplex-Desktop-Computer-PC-Intel-Core-2-Duo-4GB-Memory-250GB-Hard-Drive-Windows-10-19-LCD-Refurbished_e1c541d2-ec1d-4707-aab2-402c187c850d.7981d22503c2182b01cbcc90ecd46c7c.jpeg" alt="Desktop">
+        <button class="collections_desing" type="button">Desktop</button>
+      </article>
+
+      <article class="Category-card card">
+        <img src="https://cdn.ttgtmedia.com/rms/onlineimages/hp_elitebook_mobile.jpg" alt="Lagtop">
+        <button class="collections_desing" type="button">Laptop</button>
+      </article>
+
+
+      <article class="Category-card card">
+        <img src="https://media.wired.com/photos/593284aeaef9a462de98365f/master/w_2560%2Cc_limit/2014-09-23-iphone6-gallery-1.jpg" alt="SmartPhone">
+        <button class="collections_desing" type="button">SmartPhone</button>
+      </article>
+
+
+      <article class="Category-card card">
+        <img src="https://www.ubuy.co.nl/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkucWEvNjMzYjUxMTIyYWYxY2U2MDVhNTdhZTUwLTEwLTEuanBn.jpg" alt="Tablet">
+        <button class="collections_desing" type="button">Tablet</button>
+      </article>
+
+
+      <article class="Category-card card">
+        <img src="https://www.ryans.com/storage/products/main/havit-h628bt-black-over-ear-bluetooth-11691668691.webp" alt="Headphone">
+        <button class="collections_desing" type="button">Headphone</button>
+      </article>
+
+
+      <article class="Category-card card">
+        <img src="https://www.ryans.com/storage/products/main/havit-ipc20-20mp-wi-fi-dome-ip-camera-11680344942.webp" alt="Ip Camera">
+        <button class="collections_desing" type="button">Camera</button>
+      </article>
+
+
+    </div>
+
+
+
+
+
+    <div class="pagination">
+
+      <button class="btn pagination_button">
+        <i class="fa-solid fa-less-than"></i>
+      </button>
+      <button class="btn pagination_button">2</button>
+      <button class="btn pagination_button">3</button>
+      <button class="btn pagination_button">4</button>
+      <button class="btn pagination_button">5</button>
+      <button class="btn pagination_button">6</button>
+      <button class="btn pagination_button">7</button>
+      <button class="btn pagination_button">8</button>
+      <button class="btn pagination_button">9</button>
+      <button class="btn pagination_button">10</button>
+      <button class="btn pagination_button">...</button>
+      <button class="btn pagination_button">50</button>
+      <button class="btn pagination_button">
+        <i class="fa-solid fa-greater-than"></i>
+      </button>
+
+    </div>
+    </div>
+  </main>
+  <!-- footer Start -->
+  <footer class="footer flex-space-around">
+
+    <div class="connect_section ">
+      <h1 class="branding collections_desing">authenticate telecom</h1>
+      <div class="">
+        <div class="connectUS">
+          <h5>Connect With US</h5>
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-linkedin"></i>
           <i class="fa-brands fa-pinterest"></i>
-          </div>
         </div>
-        <div class="payment_method ">
-          <h5>Safe Payment </h5>
-          <img src="https://freelogopng.com/images/all_img/1656234782bkash-app-logo.png" alt="Bkash">
-          <img src="https://freelogopng.com/images/all_img/1679248787Nagad-Logo.png" alt="nogot">
-          <img src="https://seeklogo.com/images/D/dutch-bangla-rocket-logo-B4D1CC458D-seeklogo.com.png" alt="rocket">
-          <img src="https://w7.pngwing.com/pngs/223/204/png-transparent-bank-logo-bank-saving-bank-pic-building-structure-bank.png" alt="bank">
-        </div>
-        </div>
-        <div class="shopping footer_cart">
-          <ul class="footer_item">
-            <li class="footer_list">
-              <a href="#" class="footer_link">Shopping</a>
-              <ul class="sub_footer">
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Lagtop</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Desktop</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Smatphone</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Tablet</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Ip Camera</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Acesoris</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Headphones</a>
-                </li>
-              </ul>
+      </div>
+      <div class="payment_method ">
+        <h5>Safe Payment </h5>
+        <img src="https://freelogopng.com/images/all_img/1656234782bkash-app-logo.png" alt="Bkash">
+        <img src="https://freelogopng.com/images/all_img/1679248787Nagad-Logo.png" alt="nogot">
+        <img src="https://seeklogo.com/images/D/dutch-bangla-rocket-logo-B4D1CC458D-seeklogo.com.png" alt="rocket">
+        <img
+          src="https://w7.pngwing.com/pngs/223/204/png-transparent-bank-logo-bank-saving-bank-pic-building-structure-bank.png"
+          alt="bank">
+      </div>
+    </div>
+    <div class="shopping footer_cart">
+      <ul class="footer_item">
+        <li class="footer_list">
+          <a href="#" class="footer_link">Shopping</a>
+          <ul class="sub_footer">
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Lagtop</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Desktop</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Smatphone</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Tablet</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Ip Camera</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Acesoris</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Headphones</a>
             </li>
           </ul>
-        </div>
-        <div class=" footer_cart">
-          <ul class="footer_item">
-            <li class="footer_list">
-              <a href="#" class="footer_link Contact">About Us</a>
-              <ul class="sub_footer">
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">About</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">blog</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Connect</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">About Shipping</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Community</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">Support 24-7</a>
-                </li>
-                <li class="sub_footer_list">
-                  <a href="#" class="sub_footer_link">About Payment System</a>
-                </li>
-              </ul>
+        </li>
+      </ul>
+    </div>
+    <div class=" footer_cart">
+      <ul class="footer_item">
+        <li class="footer_list">
+          <a href="#" class="footer_link Contact">About Us</a>
+          <ul class="sub_footer">
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">About</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">blog</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Connect</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">About Shipping</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Community</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">Support 24-7</a>
+            </li>
+            <li class="sub_footer_list">
+              <a href="#" class="sub_footer_link">About Payment System</a>
             </li>
           </ul>
-        </div>
-          </li>
-          </ul> 
-        </div>
-       
-      </footer>
-      <!-- footer Ends -->
+        </li>
+      </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+
+  </footer>
+  <!-- footer Ends -->
 </body>
+
 </html>
