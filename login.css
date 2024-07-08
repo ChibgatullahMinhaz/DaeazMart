@@ -6,6 +6,9 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-image: url("https://images5.alphacoders.com/889/889488.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .login-form {
@@ -13,14 +16,19 @@ body {
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: .8;
+  margin: 0 auto;
 }
-
+#login{
+  text-align: center;
+}
 .form-control {
   margin-bottom: 10px;
 }
 .form-control label {
   display: block;
   margin-bottom: 5px;
+  text-align: left;
 }
 
 .form-control input {
@@ -28,6 +36,7 @@ body {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  align-self: center;
 }
 
 .form-control input[type="submit"] {
