@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This is Ecommerce website for authenticate telecom"
+      content="This is Ecommerce website for DaesMart its a multi vendor website wich contain all necessary products"
     />
     <!-- Font Awsome cdn  start here-->
     <link
@@ -37,7 +37,7 @@
         <input class="border-2 rounded-md outline-none p-1 sm:p-2 placeholder:text-yellow-100 border-[#ff6f61]" value="" type="search" name="search" id="searchProducts" placeholder="Search Products">
       </div>
       <div class="flex items-center gap-x-1 text-yellow-100">
-        <i class="fa-solid fa-user-plus cursor-pointer"></i>
+        <i class="fa-solid fa-user-plus cursor-pointer" id="loginbtn"></i>
       </div>
     </nav>
     <!-- hero content  -->
@@ -84,26 +84,53 @@
    </header>
 
    <main class="max-w-[97%] mx-auto">
+
+    <!-- login modal  -->
+    <section id="logModal" class="absolute top-[40%] left-0 right-0 mx-auto bg-[#2d4059] w-[80%] lg:w-[35%] rounded-lg hidden">
+        <div class="hero-content flex-col lg:flex-row-reverse"> 
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+               <form class="fieldset">
+                <label class="fieldset-label">Email</label>
+                <input type="email" value="m@gamil.com" class="input email" placeholder="Email"  required/>
+                <label class="fieldset-label">Password</label>
+                <input type="password" class="input password" placeholder="Password" required/>
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="login" class="btn btn-neutral mt-4">Login</button>
+               </form>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+    </section>
+
     <!-- category Section -->
      <h1 class="text-[#2d4059] font-bold text-2xl">Category</h1>
-     <section id="categorySection" class="grid grid-cols-3 md:grid-cols-6 p-2 text-center text-[#2d4059] hover:cursor-pointer">
-
+     <section id="categorySection" class="grid grid-cols-3 md:grid-cols-6 p-2 text-center text-[#2d4059] hover:cursor-pointer ">
+<!-- hare are dynamic section card -->
      </section>
+   
+     <!-- for yours  -->
+     <h1 class="text-[#2d4059] text-2xl">Just For You</h1>
+      <section id="forYours" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+      </section>
    </main>
 
    <footer class="footer sm:footer-horizontal bg-[#2d4059] text-gray-100 p-10">
  
     <nav>
       <h6 class="footer-title">Company</h6>
-      <a class="link link-hover">About us</a>
+      <a href="view/pages/about.html" class="link link-hover">About us</a>
       <a class="link link-hover">Contact</a>
       <a class="link link-hover">Join As a Seller</a>
     </nav>
     <nav>
       <h6 class="footer-title">Legal</h6>
       <a class="link link-hover">FAQs</a>
-      <a class="link link-hover">Privacy policy</a>
-      <a class="link link-hover">Return policy</a>
+      <a href="view/pages/privery&return.html" class="link link-hover">Privacy policy</a>
+      <a href="view/pages/privery&return.html" class="link link-hover">Return policy</a>
     </nav>
     <nav>
       <h1 class="text-yellow-100">Newsletter</h1>
@@ -163,6 +190,8 @@
 
   <!-- connecting js files -->
    <script src="utilities/utilities.js"></script>
+   <script src="javaScript/script.js"></script>
    <script src="javaScript/categorySection.js"></script>
+   <script src="javaScript/products.js"></script>
   </body>
 </html>
