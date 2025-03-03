@@ -12,6 +12,10 @@ const handleLogin = ()=>{
         const password = document.querySelector('.password').value;
         if(email === 'admin@gamil.com' && password === 'admin'){
             window.location.href = './admin/admin.html'
+        }else{
+            alert('Invalid Admin Email & Password')
+            document.getElementById('logModal').classList.add('hidden')
+
         }
     })
 }
