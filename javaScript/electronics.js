@@ -1,26 +1,7 @@
-// dynamic card lood
-let cardContainer = document.getElementById('cardContainer');
-cardContainer.innerHTML = ''
-electronicsProducts.forEach(card => {
-    const div = document.createElement('div');
-    div.innerHTML = `
-     <figure >
-          <img
-            src=${card.Image}
-            alt=${card.title}
-            class="rounded-xl object-cover" />
-        </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">${card.title}</h2>
-          <div class="card-actions">
-            <button class="btn btn-primary buyNow">Buy Now</button>
-          </div>
-        </div>
-    `
-    cardContainer.appendChild(div)
-});
 
-// // handle filtaring with category
+let cardContainer = document.getElementById('cardContainer');
+cardContainer.innerHTML = '';
+// handle filtaring with category
 document.querySelectorAll('.category').forEach(categoryName => {
     categoryName.addEventListener('click', (e) => {
         let category = e.target.innerText;
@@ -37,7 +18,7 @@ document.querySelectorAll('.category').forEach(categoryName => {
                         class="rounded-xl object-cover" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">${card.title}</h2>
+                      <h2 class="card-title line-clamp-1 w-full">${card.title}</h2>
                       <div class="card-actions">
                         <button class="btn btn-primary buyNow">Buy Now</button>
                       </div>
@@ -49,6 +30,34 @@ document.querySelectorAll('.category').forEach(categoryName => {
 
     })
 });
+
+
+
+// dynamic card lood
+electronicsProducts.forEach(card => {
+    const div = document.createElement('div');
+    div.innerHTML = `
+     <figure >
+          <img
+            src=${card.Image}
+            alt=${card.title}
+            class="rounded-xl object-cover" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title line-clamp-1 w-full">${card.title}</h2>
+          <div class="card-actions">
+            <button class="btn btn-primary buyNow">Buy Now</button>
+          </div>
+        </div>
+    `
+    cardContainer.appendChild(div)
+});
+
+
+
+
+
+
 
 
 // hande buy btn 

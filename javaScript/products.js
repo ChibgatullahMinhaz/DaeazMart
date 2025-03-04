@@ -1,6 +1,6 @@
 const electronicsProducts = [
 {
-    title:'tablet',
+    title:'tablet the quizk brown jumps for over the lazy dog',
     price: 243,
     category: 'tablet',
     Image:'',
