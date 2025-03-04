@@ -70,7 +70,7 @@ for (const category of categorySection) {
     div.appendChild(p)
     categoryContainer.appendChild(div);
 }
-let fileBase = './view/categorypages/'
+let fileBase = './view/'
 const allcategoryCards = document.querySelectorAll('.ctgbox');
 allcategoryCards.forEach(card => {
     card.addEventListener('click', (e) => {
