@@ -25,7 +25,7 @@ const electronicsProducts = [
     Rating: '⭐⭐⭐⭐⭐',
     buyNow: ''
 }
-,
+
 ,
 {
     title:'watch',
@@ -35,7 +35,7 @@ const electronicsProducts = [
     Rating: '⭐⭐⭐⭐⭐',
     buyNow: ''
 }
-,
+
 ,
 {
     title:'ipad',
@@ -49,5 +49,7 @@ const electronicsProducts = [
 ];
 
 const Cloths=[
-
+{
+    title:'t-shirt'
+}
 ];

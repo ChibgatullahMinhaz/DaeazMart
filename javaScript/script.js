@@ -21,3 +21,10 @@ const handleLogin = ()=>{
 }
 modalLogin();
 handleLogin();
+
+// show home page cards
+
+const newproducts = [...Cloths, ...electronicsProducts]
+newproducts.forEach(card => {
+    console.log(card);
+});
