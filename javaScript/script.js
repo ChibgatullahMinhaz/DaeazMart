@@ -5,12 +5,18 @@ forYoursContainer.innerHTML = '';
 // search 
 const SearchQuery = document.getElementById('searchProducts');
 SearchQuery.addEventListener('keypress', (e) => {
+
+  if (e.target.value === '') {
+    return alert('Please Enter The Searching Products')
+  }
+
     if (e.key === "Enter") {
         const SearchQuary = e.target.value
       const searcedProducts =  Allproducts.filter(product =>  product.title.toLowerCase().includes(SearchQuary.toLowerCase()));
       forYoursContainer.innerHTML = '';
      if (searcedProducts.length === 0) {
            const p = document.createElement('p')
+           p.classList.add('text-gray-500', 'text-center', 'mt-5'); 
            p.innerText = 'Not Found😊'
            forYoursContainer.appendChild(p) 
         } else {
@@ -39,7 +45,7 @@ SearchQuery.addEventListener('keypress', (e) => {
 
 Allproducts.forEach(card => {
     const div = document.createElement('div');
-    div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
+    div.classList.add('shadow-lg', 'p-3', 'overflow-hidden','hover:cursor-pointer', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
     div.dataset.product = JSON.stringify(card);
     div.innerHTML = `
        <figure>

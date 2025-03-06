@@ -4,10 +4,8 @@
 
 ### filtering with category
 
- ### Live Search Funtionality
+### Live Search Funtionality
 
 # up comming Featured
-
-### sorting with price, ranting etc
 
 ### Intregate payment method with ssl

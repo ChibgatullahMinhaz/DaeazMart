@@ -11,6 +11,7 @@ SearchQuery.addEventListener('keypress', (e) => {
      if (searcedProducts.length === 0) {
         cardContainer.innerHTML = '';
            const p = document.createElement('p');
+           p.classList.add('text-gray-500', 'text-center', 'mt-5'); 
            p.innerText = 'Not Found'
            cardContainer.appendChild(p);
         } else {
