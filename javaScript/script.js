@@ -1,3 +1,4 @@
+document.documentElement.style.scrollBehavior = "smooth";
 const modalLogin = ()=>{
     const loginbtn = document.getElementById('loginbtn');
 loginbtn.addEventListener('click', (e)=>{

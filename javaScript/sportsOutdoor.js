@@ -1,4 +1,4 @@
-
+document.documentElement.style.scrollBehavior = "smooth";
 let cardContainer = document.getElementById('cardContainer');
 cardContainer.innerHTML = '';
 
