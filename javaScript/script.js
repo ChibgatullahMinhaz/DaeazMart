@@ -31,9 +31,9 @@ SearchQuery.addEventListener('keypress', (e) => {
                       <div class="px-2 py-4">
                         <h2 class="line-clamp-2 w-full cart-title">${card.title}</h2>
                       </div>
-                      <div class="flex justify-between items-center px-2">
-                        <h2 class="text-gray-500 w-full price">BDT ${card.price}</h2>
-                        <h2 class="text-gray-500 w-full rating">${card.Rating}</h2>
+                      <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-2">
+                        <h2 class="text-gray-500  price">BDT ${card.price}</h2>
+                        <h2 class="text-gray-500  rating">${card.Rating}</h2>
                       </div>
                   `;
                   forYoursContainer.appendChild(div)
@@ -54,7 +54,7 @@ Allproducts.forEach(card => {
           <div class="px-2 py-4">
             <h2 class="line-clamp-2 w-full cart-title">${card.title}</h2>
           </div>
-          <div class="flex justify-between items-center px-2">
+          <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-2">
             <h2 class="text-gray-500 w-full price">BDT ${card.price}</h2>
             <h2 class="text-gray-500 w-full rating">${card.Rating}</h2>
           </div>

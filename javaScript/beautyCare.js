@@ -17,7 +17,7 @@ electronicsProducts.forEach(card => {
           <div class="px-2 py-4">
             <h2 class=" line-clamp-2 w-full">${card.title}</h2>
           </div>
-          <div class="flex justify-between items-center px-2">
+          <div class="flex flex-col md:flex-row justify-center md:justify-between  items-center px-2">
             <h2 class="text-gray-500 w-full">BDT ${card.price}</h2>
             <h2 class="text-gray-500 w-full">${card.Rating}</h2>
           </div>
@@ -51,7 +51,7 @@ categoryList.forEach(selectedCategory => {
                 <div class="px-2 py-4">
                   <h2 class=" line-clamp-2 w-full">${card.title}</h2>
                 </div>
-                <div class="flex justify-between items-center px-2">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-2">
                   <h2 class="text-gray-500 w-full">BDT ${card.price}</h2>
                   <h2 class="text-gray-500 w-full">${card.Rating}</h2>
                 </div>
