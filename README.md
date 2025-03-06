@@ -1,7 +1,3 @@
-# Admin or Seller Dashbord
-
-# products category
-
 # key Featurse
 
 ### Dynamic Product Details

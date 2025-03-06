@@ -38,5 +38,3 @@ SearchQuery.addEventListener('keypress', (e) => {
     }
 });
 
-
-
