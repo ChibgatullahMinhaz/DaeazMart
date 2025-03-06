@@ -9,3 +9,6 @@ body{
     background-color: var(--themeColor);
     font-family: "Poppins", sans-serif;
 }
+header{
+  position: sticky;
+}
