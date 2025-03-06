@@ -1,31 +1,22 @@
 document.documentElement.style.scrollBehavior = "smooth";
-const modalLogin = ()=>{
-    const loginbtn = document.getElementById('loginbtn');
-loginbtn.addEventListener('click', (e)=>{
-    e.preventDefault()
-    document.getElementById('logModal').classList.remove('hidden')
-})
-}
-const handleLogin = ()=>{
-    document.getElementById('login').addEventListener('click', (e)=>{
-        e.preventDefault()
-        const email = document.querySelector('.email').value;
-        const password = document.querySelector('.password').value;
-        if(email === 'admin@gamil.com' && password === 'admin'){
-            window.location.href = './admin/admin.html'
-        }else{
-            alert('Invalid Admin Email & Password')
-            document.getElementById('logModal').classList.add('hidden')
-
-        }
-    })
-}
-modalLogin();
-handleLogin();
-
-
 const Allproducts = [...Cloths, ...electronicsProducts];
 
+const SearchQuery = document.getElementById('searchProducts');
+
+SearchQuery.addEventListener('keypress', (e) => {
+    if (e.key === "Enter") {
+        const SearchQuary = e.target.value
+      const searcedProducts =  Allproducts.filter(product =>  product.title.toLowerCase().includes(SearchQuary.toLowerCase()));
+
+     if (searcedProducts.length === 0) {
+            console.log('❌ Product nei');  
+        } else {
+            console.log('✅ Found Products:', searcedProducts); 
+        }
+
+
+    }
+});
 const forYoursContainer = document.getElementById('forYours');
 Allproducts.forEach(card => {
     const div = document.createElement('div');
@@ -47,10 +38,10 @@ Allproducts.forEach(card => {
 });
 
 
-
+// handle product Details
 forYoursContainer.addEventListener('click', (event) => {
     const selectedCard = event.target.closest('.card');
-    if (!selectedCard) return; 
+    if (!selectedCard) return;
 
     const productDetails = JSON.parse(selectedCard.dataset.product);
 

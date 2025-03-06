@@ -2,8 +2,6 @@
 let cardContainer = document.getElementById('cardContainer');
 cardContainer.innerHTML = '';
 
-
-
 // dynamic card lood
 electronicsProducts.forEach(card => {
   const imgURL = '.'+card.Image;

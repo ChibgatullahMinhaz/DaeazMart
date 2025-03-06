@@ -111,5 +111,12 @@ const Cloths=[
     title:'t-shirt',
     Image:'./assets/bannerImages/headphone1.jpg',
 
-}
+},
+{
+    title:'t-shirt',
+    Image:'./assets/bannerImages/headphone1.jpg',
+
+},
 ];
+
+  
