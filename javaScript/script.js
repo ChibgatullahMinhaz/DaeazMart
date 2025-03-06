@@ -6,25 +6,25 @@ forYoursContainer.innerHTML = '';
 const SearchQuery = document.getElementById('searchProducts');
 SearchQuery.addEventListener('keypress', (e) => {
 
-  if (e.target.value === '') {
-    return alert('Please Enter The Searching Products')
-  }
 
-    if (e.key === "Enter") {
-        const SearchQuary = e.target.value
-      const searcedProducts =  Allproducts.filter(product =>  product.title.toLowerCase().includes(SearchQuary.toLowerCase()));
-      forYoursContainer.innerHTML = '';
-     if (searcedProducts.length === 0) {
-           const p = document.createElement('p')
-           p.classList.add('text-gray-500', 'text-center', 'mt-5'); 
-           p.innerText = 'Not Found😊'
-           forYoursContainer.appendChild(p) 
-        } else {
-            searcedProducts.forEach(card => {
-                const div = document.createElement('div');
-                div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
-                div.dataset.product = JSON.stringify(card);
-                div.innerHTML = `
+  if (e.key === "Enter") {
+    const SearchQuary = e.target.value
+    if (SearchQuary === '') {
+      return alert('Please Enter The Searching Products')
+    }
+    const searcedProducts = Allproducts.filter(product => product.title.toLowerCase().includes(SearchQuary.toLowerCase()));
+    forYoursContainer.innerHTML = '';
+    if (searcedProducts.length === 0) {
+      const p = document.createElement('p')
+      p.classList.add('text-gray-500', 'text-center', 'mt-5');
+      p.innerText = 'Not Found😊'
+      forYoursContainer.appendChild(p)
+    } else {
+      searcedProducts.forEach(card => {
+        const div = document.createElement('div');
+        div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
+        div.dataset.product = JSON.stringify(card);
+        div.innerHTML = `
                    <figure>
                          <img class="w-full rounded-lg h-auto object-cover" src="${card.Image}" alt="${card.title}">
                       </figure>
@@ -36,18 +36,18 @@ SearchQuery.addEventListener('keypress', (e) => {
                         <h2 class="text-gray-500  rating">${card.Rating}</h2>
                       </div>
                   `;
-                  forYoursContainer.appendChild(div)
-            });
-        }
+        forYoursContainer.appendChild(div)
+      });
     }
+  }
 });
 
 
 Allproducts.forEach(card => {
-    const div = document.createElement('div');
-    div.classList.add('shadow-lg', 'p-3', 'overflow-hidden','hover:cursor-pointer', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
-    div.dataset.product = JSON.stringify(card);
-    div.innerHTML = `
+  const div = document.createElement('div');
+  div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'hover:cursor-pointer', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
+  div.dataset.product = JSON.stringify(card);
+  div.innerHTML = `
        <figure>
              <img class="w-full rounded-lg h-auto object-cover" src="${card.Image}" alt="${card.title}">
           </figure>
@@ -59,19 +59,19 @@ Allproducts.forEach(card => {
             <h2 class="text-gray-500 w-full rating">${card.Rating}</h2>
           </div>
       `;
-    forYoursContainer.appendChild(div);
+  forYoursContainer.appendChild(div);
 });
 
 
 
 // handle product Details
 forYoursContainer.addEventListener('click', (event) => {
-    const selectedCard = event.target.closest('.card');
-    if (!selectedCard) return;
+  const selectedCard = event.target.closest('.card');
+  if (!selectedCard) return;
 
-    const productDetails = JSON.parse(selectedCard.dataset.product);
+  const productDetails = JSON.parse(selectedCard.dataset.product);
 
-    localStorage.setItem('selectedProduct', JSON.stringify(productDetails));
+  localStorage.setItem('selectedProduct', JSON.stringify(productDetails));
 
-    window.location.href = './view/productDetails.html';
+  window.location.href = './view/productDetails.html';
 });
