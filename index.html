@@ -22,11 +22,11 @@
     <title>DaeazMart</title>
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body class="min-h-screen">
+  <body>
    <header class="sticky top-0 z-40">
     <div class="flex items-center justify-between sticky bg-[#2d4059]  px-4 py-1 text-yellow-100">
-      <p class="hidden lg:block">Please Call us to check the Stock before Placing the order!</p>
-      <p class="lg:hidden">Contact: 099.........</p>
+      <p class="hidden lg:block text-[#fef9c3]">Please Call us to check the Stock before Placing the order!</p>
+      <p class="lg:hidden text-[#fef9c3]">Contact: 099.........</p>
       <p><i class="fa-solid fa-cart-shopping">0</i></p>
     </div>
     <nav class="sticky flex flex-col md:flex-row items-center justify-between px-2 py-2 lg:p-6 gap-x-3 bg-[#2d4059]">
@@ -35,10 +35,10 @@
       </div>
      <!-- searching and login -->
       <div class="flex w-full  lg:justify-end justify-between items-center gap-x-2">
-        <div class="">
-          <input class="border-2 rounded-md outline-none p-1 sm:p-2 placeholder:text-yellow-100 border-[#ff6f61]" value="" type="search" name="search" id="searchProducts" placeholder="Search Products">
+        <div class="text-white">
+          <input class="border-2 rounded-md outline-none p-1 sm:p-2 placeholder:text-[#fef9c3] border-[#ff6f61]" value="" type="search" name="search" id="searchProducts" placeholder="Search Products">
         </div>
-        <div class=" justify-end flex items-center text-yellow-100">
+        <div class=" justify-end flex items-center text-[#fef9c3]">
           <i class="fa-solid fa-user-plus cursor-pointer" id="loginbtn"></i>
         </div>
 
@@ -48,7 +48,7 @@
    
    </header>
 
-   <main class="max-w-[97%] mx-auto mt-4 lg:mt-6 min-h-screen">
+   <main class="max-w-[97%] mx-auto mt-4 lg:mt-6" id="searchedProducts">
 
     <!-- login modal  -->
     <section id="logModal" class="absolute top-[40%] left-0 right-0 mx-auto bg-[#2d4059] w-[80%] lg:w-[35%] rounded-lg hidden">
@@ -71,8 +71,8 @@
     </section>
 
     <!-- category Section -->
-     <h1 class="text-[#2d4059] font-bold text-2xl">Category</h1>
-     <section id="categorySection" class="grid grid-cols-3 md:grid-cols-6 p-2 text-center text-[#2d4059] hover:cursor-pointer ">
+     <h1 class="text-[#2d4059] font-bold text-2xl categorySection">Category</h1>
+     <section id="categorySection" class="categorySection grid grid-cols-3 md:grid-cols-6 p-2 text-center text-[#2d4059] hover:cursor-pointer ">
 <!-- hare are dynamic section card -->
      </section>
    
@@ -153,7 +153,7 @@
   <!-- connecting js files -->
    <script src="utilities/utilities.js"></script>
    <script src="javaScript/products.js"></script>
-   <script src="javaScript/script.js"></script>
+   <script src="javaScript/app.js"></script>
    <script src="javaScript/categorySection.js"></script>
    <script src="javaScript/ProductsDetails.js"></script>
   </body>

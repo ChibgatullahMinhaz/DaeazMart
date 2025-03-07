@@ -1,25 +1,28 @@
 document.documentElement.style.scrollBehavior = "smooth";
 const Allproducts = [...Cloths, ...electronicsProducts];
 const forYoursContainer = document.getElementById('forYours');
+const SearchProducts = document.getElementById('searchedProducts');
 forYoursContainer.innerHTML = '';
 // search 
 const SearchQuery = document.getElementById('searchProducts');
 SearchQuery.addEventListener('keypress', (e) => {
-
-
   if (e.key === "Enter") {
     const SearchQuary = e.target.value
     if (SearchQuary === '') {
       return alert('Please Enter The Searching Products')
     }
     const searcedProducts = Allproducts.filter(product => product.title.toLowerCase().includes(SearchQuary.toLowerCase()));
-    forYoursContainer.innerHTML = '';
     if (searcedProducts.length === 0) {
+      SearchProducts.innerHTML = '';
       const p = document.createElement('p')
       p.classList.add('text-gray-500', 'text-center', 'mt-5');
-      p.innerText = 'Not Found😊'
-      forYoursContainer.appendChild(p)
+      p.innerText = 'Not Found😊';
+      SearchProducts.classList.add('min-h-screen')
+      SearchProducts.appendChild(p)
     } else {
+      SearchProducts.innerHTML = '';
+      SearchProducts.classList.remove('min-h-screen')
+      SearchProducts.classList.add('grid', 'grid-cols-2', 'sm:grid-cols-3', 'lg:grid-cols-5', 'gap-4', 'py-8')
       searcedProducts.forEach(card => {
         const div = document.createElement('div');
         div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
@@ -36,7 +39,7 @@ SearchQuery.addEventListener('keypress', (e) => {
                         <h2 class="text-gray-500  rating">${card.Rating}</h2>
                       </div>
                   `;
-        forYoursContainer.appendChild(div)
+                  SearchProducts.appendChild(div)
       });
     }
   }
