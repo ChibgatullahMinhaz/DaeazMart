@@ -31,6 +31,9 @@ const categoryList = document.querySelectorAll('.category')
 categoryList.forEach(selectedCategory => {
   selectedCategory.addEventListener('click', (e) => {
     let category = e.target.innerText;
+    
+   categoryList.forEach(c => c.classList.remove('text-[#ff6f61]'));
+   e.target.classList.add('text-[#ff6f61]')
     cardContainer.innerHTML = '';
     electronicsProducts.forEach(card => {
       if (category === card.category) {
