@@ -33,7 +33,12 @@ electronicsProducts.forEach(card => {
 const categoryList = document.querySelectorAll('.category')
 categoryList.forEach(selectedCategory => {
   selectedCategory.addEventListener('click', (e) => {
+
     let category = e.target.innerText;
+
+   categoryList.forEach(c => c.classList.remove('text-[#ff6f61]'));
+    e.target.classList.add('text-[#ff6f61]')
+
     cardContainer.innerHTML = '';
     electronicsProducts.forEach(card => {
       if (category === card.category) {
@@ -56,7 +61,7 @@ categoryList.forEach(selectedCategory => {
                   <h2 class="text-gray-500 w-full">BDT ${card.price}</h2>
                   <h2 class="text-gray-500 w-full">${card.Rating}</h2>
                 </div>
-            `
+            `;
         cardContainer.appendChild(div)
       }
     });
