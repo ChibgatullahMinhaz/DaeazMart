@@ -12,7 +12,7 @@ electronicsProducts.forEach(card => {
     div.innerHTML = `
        <figure >
 
-             <img class="w-full rounded-lg h-auto object-cover" src=${imgURL} alt=${card.title}>
+             <img class="max-w-full lg:w-full rounded-lg max-h-[200px] lg:h-[200px] object-cover" src=${imgURL} alt=${card.title}>
           </figure>
           <div class="px-2 py-4">
             <h2 class=" line-clamp-2 w-full">${card.title}</h2>
@@ -48,7 +48,7 @@ categoryList.forEach(selectedCategory => {
           div.innerHTML = `
              <figure >
       
-                   <img class="w-full rounded-lg h-auto object-cover" src=${imgURL} alt=${card.title}>
+                   <img class="max-w-full lg:w-full rounded-lg max-h-[200px] lg:h-[200px] object-cover" src=${imgURL} alt=${card.title}>
                 </figure>
                 <div class="px-2 py-4">
                   <h2 class=" line-clamp-2 w-full">${card.title}</h2>

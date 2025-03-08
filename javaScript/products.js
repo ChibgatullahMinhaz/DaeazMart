@@ -435,6 +435,126 @@ const electronicsProducts = [
         Rating: '⭐⭐⭐⭐⭐',
         buyNow: 'https://www.daraz.com.bd/'
     },
+    {
+        title: 'Moulinex LM2071 700W Electrical Blender 2L',
+        price: "6,000",
+        category: 'Accessories',
+        Image: {
+            img2: './assets/Accessories/Moulinex-LM2071-700W-Electrical-Blender-2L.webp',
+            img1: './assets/Accessories/Moulinex-LM2071-700W-Electrical-Blender-2L.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Philips BT1235 Skin-Friendly Beard Trimmer',
+        price: "3,000",
+        category: 'Accessories',
+        Image: {
+            img2: './assets/Accessories/philips_bt1235_skin-friendly_beard_trimmer_2.jpg',
+            img1: './assets/Accessories/philips_beard_trimmer_bt1235.jpg',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Electric vegetable cutter, slicer, ginger, garlic masher, blender, food slice grinder',
+        price: "900",
+        category: 'Accessories',
+        Image: {
+            img2: './assets/Accessories/Electric-vegetable-cutter-slicer-ginger-garlic-masher-blender-food-slice-grinde.webp',
+            img1: './assets/Accessories/Electric-vegetable-cutter-slicer-ginger-garlic-masher-blender-food-slice-grinde.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Xiaomi Haylou Solar LS05 Smart Watch Charger',
+        price: "300",
+        category: 'Accessories',
+        Image: {
+            img2: './assets/Accessories/Xiaomi-Haylou-Solar-LS05-Smart-Watch-Charger.jpg',
+            img1: './assets/Accessories/Charging-Cable-For-Haylou-Solar-LS05-Smart-Watch-Charger-Adapter-Magnetic-USB-Charging-Dock-For-Xiao.jpg',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'BOYA M1 Microphone (BOYA Official Product)',
+        price: "1,200",
+        category: 'Accessories',
+        Image: {
+            img2: './assets/Accessories/BOYA-M1-in-BD-600x600-1000x1000.jpg.webp',
+            img1: './assets/Accessories/BOYA-M1-in-BD-600x600-1000x1000.jpg.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'MAONO AU-A03 Condenser Microphone Professional Podcast Studio Microphone Audio 3.5mm Computer Mic For Live Streaming',
+        price: "5,000",
+        category: 'Accessories',
+        Image: {
+            img1: './assets/Accessories/Maono_A03-BDSHOP.1.jpg',
+            img2: './assets/Accessories/Maono_A03-BDSHOP.3.jpg',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Ulanzi MT44 Extendable Vlog Tripod With 360° Ball Head – Black Color',
+        price: "2,000",
+        category: 'Accessories',
+        Image: {
+            img1: './assets/Accessories/Ulanzi-MT44.jpeg',
+            img2: './assets/Accessories/Ulanzi-MT44-Extendable-Vlog-Tripod-in-Bangladesh-1600x1600-1-1536x1536.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Rechargeable LED Desk Lamp with Storage Cup & Sharpener for Kids',
+        price: "650",
+        category: 'Accessories',
+        Image: {
+            img1: './assets/Accessories/2025-02-11-11.44.38.jpg',
+            img2: './assets/Accessories/2025-02-11-11.44.50.jpg',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'JOYROOM JR-PBF27 22.5W mini Power Bank 10000mAh',
+        price: "2,450",
+        category: 'Accessories',
+        Image: {
+            img1: './assets/Accessories/11111.webp',
+            img2: './assets/Accessories/1_5_a51e70b3-4285-42ff-bb98-39320ce89981.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Jmary KP2599 Professional Camera Tripod and Monopod – Black Color',
+        price: "3,500",
+        category: 'Accessories',
+        Image: {
+            img1: './assets/Accessories/Jmary-KP-2599-Professional-Camera-Tripod-and-Monopod.jpeg',
+            img2: './assets/Accessories/Jmary-KP-2599-Professional-Camera-Tripod-and-Monopod.jpeg',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
 
 ];
 
