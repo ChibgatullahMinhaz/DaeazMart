@@ -4,12 +4,12 @@ cardContainer.innerHTML = '';
 
 // dynamic card lood
 electronicsProducts.forEach(card => {
-  const imgURL = '.'+card.Image;
+  const imgURL = '.' + card.Image.img1;
   const div = document.createElement('div');
-  div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
+  div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
   div.dataset.product = JSON.stringify(card);
 
-    div.innerHTML = `
+  div.innerHTML = `
        <figure >
 
              <img class="w-full rounded-lg h-auto object-cover" src=${imgURL} alt=${card.title}>
@@ -28,25 +28,25 @@ electronicsProducts.forEach(card => {
 
 
 // handle filtaring with category
-const mg = document.querySelectorAll('.category')
+const mg = document.querySelectorAll('.category');
+// const categoyText = ;
 const categoryList = document.querySelectorAll('.category')
 categoryList.forEach(selectedCategory => {
   selectedCategory.addEventListener('click', (e) => {
-    let category = e.target.innerText;
-    
-   categoryList.forEach(c => c.classList.remove('text-[#ff6f61]'));
-   e.target.classList.add('text-[#ff6f61]')
+    let category = e.target.innerText.toLowerCase();
+    categoryList.forEach(c => c.classList.remove('text-[#ff6f61]'));
+    e.target.classList.add('text-[#ff6f61]')
     cardContainer.innerHTML = '';
+
     electronicsProducts.forEach(card => {
-      if (category === card.category) {
-        const imgURL = '.'+card.Image;
-        console.log(card.Image);
-        console.log(imgURL);
+      if (category === card.category.toLowerCase()) {
+        const imgURL = '.' + card.Image.img1;
+
         const div = document.createElement('div');
-        div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
+        div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
         div.dataset.product = JSON.stringify(card);
-      
-          div.innerHTML = `
+
+        div.innerHTML = `
              <figure >
       
                    <img class="w-full rounded-lg h-auto object-cover" src=${imgURL} alt=${card.title}>
@@ -71,7 +71,7 @@ categoryList.forEach(selectedCategory => {
 // handle products detials 
 cardContainer.addEventListener('click', (event) => {
   const selectedCard = event.target.closest('.card');
-  if (!selectedCard) return; 
+  if (!selectedCard) return;
 
   const productDetails = JSON.parse(selectedCard.dataset.product);
 

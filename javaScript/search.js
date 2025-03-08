@@ -20,9 +20,9 @@ SearchQuery.addEventListener('keypress', (e) => {
     } else {
       cardContainer.innerHTML = '';
       searcedProducts.forEach(card => {
-        const imgURL = '.' + card.Image;
+        const imgURL = '.' + card.Image.img1;
         const div = document.createElement('div');
-        div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
+        div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
         div.dataset.product = JSON.stringify(card);
         div.innerHTML = `
                    <figure>

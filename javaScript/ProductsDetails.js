@@ -14,6 +14,8 @@ window.onload = () => {
     // set date 
     setTitle.innerText = title;
     prodtctPrice.innerText = `BDT ${price}`;
-    productImage.src = '.' + Image
+   const convertedPrice = parseFloat(price.replace(',', ''));
+   console.log(convertedPrice);
+    productImage.src = '.' + Image.img1;
     productImage.alt = title
 };

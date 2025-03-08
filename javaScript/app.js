@@ -29,7 +29,7 @@ SearchQuery.addEventListener('keypress', (e) => {
         div.dataset.product = JSON.stringify(card);
         div.innerHTML = `
                    <figure>
-                         <img class="w-full rounded-lg h-auto object-cover" src="${card.Image}" alt="${card.title}">
+                         <img class="w-full rounded-lg h-auto object-cover" src="${card.Image.img1}" alt="${card.title}">
                       </figure>
                       <div class="px-2 py-4">
                         <h2 class="line-clamp-2 w-full cart-title">${card.title}</h2>
@@ -45,14 +45,14 @@ SearchQuery.addEventListener('keypress', (e) => {
   }
 });
 
-
+// dynamic card lood for all products
 Allproducts.forEach(card => {
   const div = document.createElement('div');
   div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'hover:cursor-pointer', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
   div.dataset.product = JSON.stringify(card);
   div.innerHTML = `
        <figure>
-             <img class="w-full rounded-lg h-auto object-cover" src="${card.Image}" alt="${card.title}">
+             <img class="w-full rounded-lg h-auto object-cover" src="${card.Image.img1}" alt="${card.title}">
           </figure>
           <div class="px-2 py-4">
             <h2 class="line-clamp-2 w-full cart-title">${card.title}</h2>

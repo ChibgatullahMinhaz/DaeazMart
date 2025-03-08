@@ -57,66 +57,135 @@ const categorySection = [
 
 // store prodtcts 
 const electronicsProducts = [
-{
-    title:'tablet the quizk brown jumps for over the lazy dog',
-    price: 243,
-    category: 'tablet',
-    Image:'./assets/watch/Color-.jpg',
-    Rating: '⭐⭐⭐⭐⭐',
-    buyNow: 'https://www.daraz.com.bd/'
-}
-,
-{
-    title:'Laptop',
-    price: 243,
-    category: 'laptop',
-    Image:'./assets/watch/desktop1.jpg',
-    Rating: '⭐⭐⭐⭐⭐',
-    buyNow: 'https://www.daraz.com.bd/products/100-i460926006-s2206575826.html?pvid=37f2ad1f-cc48-46b2-b4ed-5ca3caf6a8ff&search=jfy&scm=1007.51705.413671.0&spm=a2a0e.tm80335411.just4u.d_460926006'
-}
-,
-{
-    title:'phone',
-    price: 243,
-    category: 'Phone',
-    Image:'',
-    Rating: '⭐⭐⭐⭐⭐',
-    buyNow: '../index.html'
-}
+    {
+        title: 'Awei AT7 Bluetooth Wireless Headphone- Black Color',
+        price: "1,400",
+        category: 'Headphones',
+        Image: {
+            img1: './assets/Headphones/Awei-AT7-Bluetooth-Headphone-1.webp',
+            img2: './assets/Headphones/joyroom-neckband.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Joyroom JR-D8 Wireless Neckband Earphone',
+        price: "1,300",
+        category: 'Headphones',
+        Image: {
+            img1: './assets/Headphones/jr-d8_wireless_neckband.png',
+            img2: './assets/Headphones/joyroom-neckband.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'SIM Supported Kids Smart Watch (Smart2023 C005) – Blue Color',
+        price: "1,650",
+        category: 'Smartwatches',
+        Image: {
+            img1: './assets/watch/Color-.jpg',
+            img2: './assets/watch/Smartberry-C005.jpg',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'CMF by Nothing Watch Pro 2 – Bluetooth Calling Smart Watch',
+        price: "7,500",
+        category: 'Smartwatches',
+        Image: {
+            img1: './assets/watch/Cmf-By-Watch-3.png',
+            img2: './assets/watch/Smartberry-C005.jpg',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    }
+    ,
+    {
+        title: 'Kieslect KR2 Bluetooth Calling Smart Watch',
+        price: "6,000",
+        category: 'Smartwatches',
+        Image: {
+            img1: './assets/watch/kieslect_kr2_bluetooth_calling_smart_watch.png',
+            img2: './assets/watch/kieslect_kr2_bluetooth_calling_smart_watch_2.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    }
+    ,
+    {
+        title: 'Hoco W35 Air Wireless Headphone- Blue Color',
+        price: "1,500",
+        category: 'Headphones',
+        Image: {
+            img1: './assets/Headphones/Hoco-W35-Air-Wireless-Headphone-Blue-Color.webp',
+            img2: './assets/Headphones/Hoco-W35-Air-Wireless-Headphone.webp',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    }
+    ,
+    {
+        title: 'SIM Supported Kids Smart Watch (Smart2023 C005) – Pink Color',
+        price: "1,200",
+        category: 'Smartwatches',
+        Image: {
+            img1: './assets/watch/SIM-Supported-Kids-Smart-Watch-Smart2023-C005-Pink-Color.jpg',
+            img2: './assets/watch/kieslect_kr2_bluetooth_calling_smart_watch_2.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    }
+    ,
+    {
+        title: 'SIM Supported Kids Smart Watch (Smartberry C005) – Black Color',
+        price: "1,200",
+        category: 'Smartwatches',
+        Image: {
+            img1: './assets/watch/SIM-Supported-Kids-Smartwatch-Black.jpg',
+            img2: './assets/watch/kieslect_kr2_bluetooth_calling_smart_watch_2.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    }
+    ,
+    {
+        title: 'Hoco W35 Max ANC Wireless Headphone',
+        price: "1,700",
+        category: 'Headphones',
+        Image: {
+            img1: './assets/Headphones/hoco_w35_max_anc.png',
+            img2: './assets/Headphones/hoco_w35_max_anc_silver.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Hoco W35 Air Wireless Headphone- Green Color',
+        price: "1,400",
+        category: 'Headphones',
+        Image: {
+            img1: './assets/Headphones/Hoco-W35-Air-Wireless-Headphone-Green-Color.webp',
+            img2: './assets/Headphones/hoco_w35_max_anc_silver.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
 
-,
-{
-    title:'watch',
-    price: 243,
-    category: 'smartWatch',
-    Image:'./assets/bannerImages/headphone1.jpg',
-    Rating: '⭐⭐⭐⭐⭐',
-    buyNow: ''
-}
-
-,
-{
-    title:'ipad',
-    price: 243,
-    category: 'ipad',
-    Image:'',
-    Rating: '⭐⭐⭐⭐⭐',
-    buyNow: ''
-}
-,
 ];
 
-const Cloths=[
-{
-    title:'t-shirt',
-    Image:'./assets/bannerImages/headphone1.jpg',
+const Cloths = [
+    {
+        title: 't-shirt',
+        Image: './assets/bannerImages/headphone1.jpg',
 
-},
-{
-    title:'t-shirt',
-    Image:'./assets/bannerImages/headphone1.jpg',
+    },
+    {
+        title: 't-shirt',
+        Image: './assets/bannerImages/headphone1.jpg',
 
-},
+    },
 ];
 
-  
+
