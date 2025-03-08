@@ -56,6 +56,7 @@ const categorySection = [
 ];
 
 // store prodtcts 
+// electronicsProducts
 const electronicsProducts = [
     {
         title: 'Awei AT7 Bluetooth Wireless Headphone- Black Color',
@@ -168,6 +169,149 @@ const electronicsProducts = [
         Image: {
             img1: './assets/Headphones/Hoco-W35-Air-Wireless-Headphone-Green-Color.webp',
             img2: './assets/Headphones/hoco_w35_max_anc_silver.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Sports Earbuds GH-7Z – White Color',
+        price: "1,700",
+        category: 'Earbuds',
+        Image: {
+            img1: './assets/Earbuds/photo_2024-12-01_16-45-44.jpg',
+            img2: './assets/Earbuds/photo_2024-12-01_16-45-51.jpg',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'YW15 Active Noise Cancelling Earbuds – Black',
+        price: "1,000",
+        category: 'Earbuds',
+        Image: {
+            img1: './assets/Earbuds/photo_2024-12-01_16-45-26.webp',
+            img2: './assets/Earbuds/photo_2024-12-01_16-45-26.webp',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'HOCO EQ2 Plus Wireless Bluetooth Earbuds – Black',
+        price: "1,500",
+        category: 'Earbuds',
+        Image: {
+            img1: './assets/Earbuds/HOCO-EQ2-Plus.png',
+            img2: './assets/Earbuds/HOCO-EQ2-Plus1.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Hoco EW54 Crystal True Wireless Earbuds – Blue',
+        price: "1,300",
+        category: 'Earbuds',
+        Image: {
+            img1: './assets/Earbuds/Hoco-EW54-Crystal-True-Wireless-Earbuds-7.png',
+            img2: './assets/Earbuds/hoco_w35_max_anc_silver.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Acefast W1 ANC ENC TWS Earbuds',
+        price: "1,800",
+        category: 'Earbuds',
+        Image: {
+            img1: './assets/Earbuds/acefast-w1-anc-true-wireless-earbuds-black.png',
+            img2: './assets/Earbuds/acefast-w1-anc-true-wireless-earbuds.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'SoundPEATS T3 Pro ANC Earbuds – Black',
+        price: "1,900",
+        category: 'Earbuds',
+        Image: {
+            img1: './assets/Earbuds/kryinternational.png',
+            img2: './assets/Earbuds/1_3e964110-cef5-496b-ac15-d4dda5246c2e_900x.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Anker Soundcore R50i True Wireless Earbuds – Black Color',
+        price: "2,000",
+        category: 'Earbuds',
+        Image: {
+            img1: './assets/Earbuds/Anker-Soundcore-R50i-True-Wireless-Earbuds-Black-Color.jpeg',
+            img2: './assets/Earbuds/Anker-Soundcore-R50i-True-Wireless-Earbuds-Black-Color.jpeg',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Symphony SYMTAB 80 4GB 32GB 8" Tablet - Grey',
+        price: "9,999",
+        category: 'Tablet',
+        Image: {
+            img1: './assets/Tablet/symtab-80.webp',
+            img2: './assets/Tablet/symtab-80.webp',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Teclast P30 4GB 64GB 10.1" Tablet Wi-Fi Only',
+        price: "12,999",
+        category: 'Tablet',
+        Image: {
+            img1: './assets/Tablet/Teclast-P30.webp',
+            img2: './assets/Tablet/Teclast P30.webp',
+        },
+        Rating: '⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Teclast M50 Mini 6GB RAM 128GB Storage 8.7" Tablet',
+        price: "18,200",
+        category: 'Tablet',
+        Image: {
+            img1: './assets/Tablet/m50.webp',
+            img2: './assets/Tablet/m50.webp',
+        },
+        Rating: '⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'HONOR Pad X8a 4GB RAM 64GB Storage 11" Tablet',
+        price: "17,200",
+        category: 'Tablet',
+        Image: {
+            img1: './assets/Tablet/pad.webp',
+            img2: './assets/Tablet/pad.webp',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Walton Walpad 8G 4GB RAM 64GB Storage 8" Tablet',
+        price: "15,200",
+        category: 'Tablet',
+        Image: {
+            img1: './assets/Tablet/walpad-8g.webp',
+            img2: './assets/Tablet/walpad-8g.webp',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'TECLAST T50 Plus 6GB 256GB Storage 11 inch Android Tablet',
+        price: "22,000",
+        category: 'Tablet',
+        Image: {
+            img1: './assets/Tablet/t50Plus.webp',
+            img2: './assets/Tablet/t50Plus.webp',
         },
         Rating: '⭐⭐⭐⭐⭐',
         buyNow: 'https://www.daraz.com.bd/'
