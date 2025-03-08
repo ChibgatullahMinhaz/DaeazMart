@@ -1,5 +1,6 @@
 document.documentElement.style.scrollBehavior = "smooth";
-const Allproducts = [...Cloths, ...electronicsProducts];
+const Allproducts = [...fashionAndClothes, ...electronicsProducts];
+
 const forYoursContainer = document.getElementById('forYours');
 const SearchProducts = document.getElementById('searchedProducts');
 forYoursContainer.innerHTML = '';
@@ -35,8 +36,8 @@ SearchQuery.addEventListener('keypress', (e) => {
                         <h2 class="line-clamp-2 w-full cart-title">${card.title}</h2>
                       </div>
                       <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-2">
-                        <h2 class="text-gray-500  price">BDT ${card.price}</h2>
-                        <h2 class="text-gray-500  rating">${card.Rating}</h2>
+                        <h2 class="text-gray-500 line-clamp-1 price">BDT ${card.price}</h2>
+                        <h2 class="text-gray-500 line-clamp-1 rating">${card.Rating}</h2>
                       </div>
                   `;
                   SearchProducts.appendChild(div)
@@ -58,8 +59,8 @@ Allproducts.forEach(card => {
             <h2 class="line-clamp-2 w-full cart-title">${card.title}</h2>
           </div>
           <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-2">
-            <h2 class="text-gray-500 w-full price">BDT ${card.price}</h2>
-            <h2 class="text-gray-500 w-full rating">${card.Rating}</h2>
+            <h2 class="text-gray-500 w-full line-clamp-1 price">BDT ${card.price}</h2>
+            <h2 class="text-gray-500 w-full line-clamp-1 rating">${card.Rating}</h2>
           </div>
       `;
   forYoursContainer.appendChild(div);

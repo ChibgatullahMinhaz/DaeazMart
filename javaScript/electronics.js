@@ -6,7 +6,7 @@ cardContainer.innerHTML = '';
 electronicsProducts.forEach(card => {
   const imgURL = '.' + card.Image.img1;
   const div = document.createElement('div');
-  div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
+  div.classList.add('shadow-lg','hover:cursor-pointer', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
   div.dataset.product = JSON.stringify(card);
 
   div.innerHTML = `
@@ -28,14 +28,17 @@ electronicsProducts.forEach(card => {
 
 
 // handle filtaring with category
+const selectedCategoryText = document.getElementById('selectedCategory');
 const mg = document.querySelectorAll('.category');
-// const categoyText = ;
 const categoryList = document.querySelectorAll('.category')
 categoryList.forEach(selectedCategory => {
   selectedCategory.addEventListener('click', (e) => {
     let category = e.target.innerText.toLowerCase();
     categoryList.forEach(c => c.classList.remove('text-[#ff6f61]'));
-    e.target.classList.add('text-[#ff6f61]')
+    e.target.classList.add('text-[#ff6f61]');
+
+    selectedCategoryText.innerText = `Category: ${category}`;
+
     cardContainer.innerHTML = '';
 
     electronicsProducts.forEach(card => {
@@ -43,7 +46,7 @@ categoryList.forEach(selectedCategory => {
         const imgURL = '.' + card.Image.img1;
 
         const div = document.createElement('div');
-        div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
+        div.classList.add('shadow-lg','hover:cursor-pointer','p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
         div.dataset.product = JSON.stringify(card);
 
         div.innerHTML = `

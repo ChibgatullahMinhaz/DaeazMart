@@ -558,14 +558,91 @@ const electronicsProducts = [
 
 ];
 
-const Cloths = [
+const fashionAndClothes= [
     {
-        title: 'TECLAST T50 Plus 6GB 256GB Storage 11 inch Android Tablet',
-        price: "22,000",
-        category: 'Tablet',
+        title: 'ProSeed Handmade Pure Lanolin Cream – Unrefined Balm for Moms, Baby Care & Nursing – Gentle Moisturizer for Dry Skin, Lips, Hands & Face – Petroleum-Free, 8oz',
+        price: "3,400",
+        category: 'Beauty & Grooming',
         Image: {
-            img1: './assets/Tablet/t50Plus.webp',
-            img2: './assets/Tablet/t50Plus.webp',
+            img1: './assets/BeautyGrooming/ProSeed-Handmade-Pure-Lanolin.jpg',
+            img2: './assets/BeautyGrooming/ProSeed-Handmade-Pure-Lanolin.jpg',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Strip Polo T-Shirt',
+        price: "3,400",
+        category: "Men's Clothins",
+        Image: {
+            img1: './assets/BeautyGrooming/stripPoloT-shirt.webp',
+            img2: './assets/BeautyGrooming/stripPoloT-shirt.webp',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Brighten your look with our chic yellow coat jacket – a perfect blend of style and warmth.',
+        price: "31,400",
+        category: "Seasonal Wear",
+        Image: {
+            img1: './assets/SeasonalWear/jacket-1.png',
+            img2: './assets/SeasonalWear/jacket-1.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: "Elevate your wardrobe with our versatile ladies' jackets – designed for every occasion and season.",
+        price: "30,400",
+        category: "Seasonal Wear",
+        Image: {
+            img1: './assets/SeasonalWear/jacket-2.png',
+            img2: './assets/SeasonalWear/jacket-2.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: "Stay timeless with our women's leather jackets – crafted for style, durability, and year-round elegance.",
+        price: "30,400",
+        category: "Seasonal Wear",
+        Image: {
+            img1: './assets/SeasonalWear/jacket-3.png',
+            img2: './assets/SeasonalWear/jacket-3.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: "Conquer the slopes in style with our high-performance men's snowboard jackets – built for warmth and durability.",
+        price: "30,400",
+        category: "Seasonal Wear",
+        Image: {
+            img1: './assets/SeasonalWear/jacket-4.png',
+            img2: './assets/SeasonalWear/jacket-4.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: "Experience rugged sophistication with our premium men's leather jackets – timeless, durable, and effortlessly stylish.",
+        price: "30,400",
+        category: "Seasonal Wear",
+        Image: {
+            img1: './assets/SeasonalWear/jacket-5.png',
+            img2: './assets/SeasonalWear/jacket-5.png',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: "Men's casual jackets: Stylish, comfortable, and perfect for everyday wear.",
+        price: "30,400",
+        category: "Seasonal Wear",
+        Image: {
+            img1: './assets/SeasonalWear/jacket-6.png',
+            img2: './assets/SeasonalWear/jacket-6.png',
         },
         Rating: '⭐⭐⭐⭐⭐',
         buyNow: 'https://www.daraz.com.bd/'
