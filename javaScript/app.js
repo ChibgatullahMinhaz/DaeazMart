@@ -1,4 +1,6 @@
 document.documentElement.style.scrollBehavior = "smooth";
+
+// handle products data
 const Allproducts = [...fashionAndClothes, ...electronicsProducts];
 
 const forYoursContainer = document.getElementById('forYours');
@@ -79,3 +81,29 @@ forYoursContainer.addEventListener('click', (event) => {
 
   window.location.href = './view/productDetails.html';
 });
+
+
+
+
+// handle login modal
+const loginbtn = document.getElementById('loginbtn');
+loginbtn.addEventListener('click', (e)=>{
+  e.preventDefault()
+  document.getElementById('logModal').classList.remove('hidden')
+})
+
+const AdminLogin = () => {
+  document.getElementById('login').addEventListener('click', (e)=>{
+      e.preventDefault()
+      const email = document.querySelector('.email').value;
+      const password = document.querySelector('.password').value;
+      if(email === 'admin@gamil.com' && password === 'admin'){
+          window.location.href = './admin/admin.html'
+      }else{
+          alert('Invalid Admin Email & Password')
+          document.getElementById('logModal').classList.add('hidden')
+
+      }
+  })
+}
+AdminLogin();

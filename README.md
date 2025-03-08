@@ -9,3 +9,5 @@
 # up comming Featured
 
 ### Intregate payment method with ssl
+
+### add to cart and checkout
