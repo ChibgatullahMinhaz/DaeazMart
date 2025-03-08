@@ -399,6 +399,42 @@ const electronicsProducts = [
         Rating: '⭐⭐⭐⭐⭐',
         buyNow: 'https://www.daraz.com.bd/'
     },
+    {
+        title: 'NativeCam 4k Action Camera',
+        price: "7,000",
+        category: 'Camera',
+        Image: {
+            img2: './assets/Camera/NativeCam-4k-Action-Camera-2.webp',
+            img1: './assets/Camera/NativeCam-4k-Action-Camera.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'V380 PRO E27 360 Degree 1080P Wireless Home Security IP Camera',
+        price: "1,500",
+        category: 'Camera',
+        Image: {
+            img2: './assets/Camera/V380-Pro-IP-Camera-in-BD.jpeg',
+            img1: './assets/Camera/V380-Pro-IP-Camera-in-BD.jpeg',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Ausek AT-S81TR Waterproof Dual Display 5K Action Camera With Filter',
+        price: "14,500",
+        category: 'Camera',
+        Image: {
+            img2: './assets/Camera/Ausek-AT-S81TR-Waterproof-Dual-Display-5K-Action-Camera-With-Filter.webp',
+            img1: './assets/Camera/Ausek-AT-S81TR-Waterproof-Dual-Display-5K-Action-Camera-With-Filter-2.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
 
 ];
 
