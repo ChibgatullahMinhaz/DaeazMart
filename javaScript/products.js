@@ -316,19 +316,103 @@ const electronicsProducts = [
         Rating: '⭐⭐⭐⭐⭐',
         buyNow: 'https://www.daraz.com.bd/'
     },
+    {
+        title: 'Awei Y999 50W Bluetooth Soundbar Home Theater Speaker',
+        price: "5,000",
+        category: 'Bluetooth Speakers',
+        Image: {
+            img1: './assets/BluetoothSpeakers/image-upscaled.webp',
+            img2: './assets/BluetoothSpeakers/image-upscaled.webp',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'HOCO HC5 Sports Wireless Speaker',
+        price: "4,000",
+        category: 'Bluetooth Speakers',
+        Image: {
+            img1: './assets/BluetoothSpeakers/HOCO-HC5-Sports-Wireless-Speaker.webp',
+            img2: './assets/BluetoothSpeakers/HOCO-HC5-Sports-Wireless-Speaker.webp',
+        },
+        stock: 9,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'JBL Flip 6 Portable Waterproof Speaker Black',
+        price: "11,000",
+        category: 'Bluetooth Speakers',
+        Image: {
+            img1: './assets/BluetoothSpeakers/jbl-flip-6-black-500x500-1.png',
+            img2: './assets/BluetoothSpeakers/jbl-flip-6-portable-bluetooth-speaker-01.png',
+        },
+        stock: 9,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Awei Y788 RGB Outdoor Portable Bluetooth Speaker',
+        price: "3,000",
+        category: 'Bluetooth Speakers',
+        Image: {
+            img1: './assets/BluetoothSpeakers/awei_y788_portable_outdoor_bluetooth.webp',
+            img2: './assets/BluetoothSpeakers/awei_y788_portable_outdoor_bluetooth.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'JBL Xtreme 3 Portable Bluetooth Speaker – Black',
+        price: "29,000",
+        category: 'Bluetooth Speakers',
+        Image: {
+            img1: './assets/BluetoothSpeakers/jbl_xtreme_3_portable_bluetooth_speaker_in_bdshop_2.png',
+            img2: './assets/BluetoothSpeakers/jbl_xtreme_3_portable_bluetooth_speaker_in_bdshop_3.png',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Ausek AT Q60TR 4K Action Camera Combo Pack',
+        price: "8,000",
+        category: 'Camera',
+        Image: {
+            img1: './assets/Camera/Ausek-AT-Q60TR-4K-Action-Camera.webp',
+            img2: './assets/Camera/Ausek-AT-Q60TR-4K-Action-Camera-1.webp',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
+    {
+        title: 'Bullet Dome PTZ 5 Lens Three Screens Security CCTV Network Outdoor Camera',
+        price: "8,000",
+        category: 'Camera',
+        Image: {
+            img2: './assets/Camera/Bullet-Dome-PTZ-5-Lens-Three-Screens-Security-CCTV-Network-Outdoor-Camera.jpg',
+            img1: './assets/Camera/Bullet-Dome-PTZ-5-Lens-Three-Screens-Security-CCTV-Network-Outdoor-Camera-4.jpg',
+        },
+        stock: 19,
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
+    },
 
 ];
 
 const Cloths = [
     {
-        title: 't-shirt',
-        Image: './assets/bannerImages/headphone1.jpg',
-
-    },
-    {
-        title: 't-shirt',
-        Image: './assets/bannerImages/headphone1.jpg',
-
+        title: 'TECLAST T50 Plus 6GB 256GB Storage 11 inch Android Tablet',
+        price: "22,000",
+        category: 'Tablet',
+        Image: {
+            img1: './assets/Tablet/t50Plus.webp',
+            img2: './assets/Tablet/t50Plus.webp',
+        },
+        Rating: '⭐⭐⭐⭐⭐',
+        buyNow: 'https://www.daraz.com.bd/'
     },
 ];
 
