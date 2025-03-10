@@ -1,6 +1,6 @@
-document.getElementById('logo').addEventListener('click', (event)=>{
-    event.preventDefault();
-    window.location.href = '../index.html'
-  })
-  
-  
+const findlogo = ()=>{
+    document.getElementById('logo').addEventListener('click',()=>{
+        window.location.href = '../index.html';
+    });
+}
+findlogo();

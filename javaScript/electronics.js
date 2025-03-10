@@ -1,84 +1,82 @@
-
 let cardContainer = document.getElementById('cardContainer');
-cardContainer.innerHTML = '';
-
-// dynamic card lood
-electronicsProducts.forEach(card => {
-  const imgURL = '.' + card.Image.img1;
-  const div = document.createElement('div');
-  div.classList.add('shadow-lg','hover:cursor-pointer', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
-  div.dataset.product = JSON.stringify(card);
-
-  div.innerHTML = `
-       <figure >
-
-             <img class="max-w-full lg:w-full rounded-lg max-h-[200px] lg:h-[200px] object-cover" src=${imgURL} alt=${card.title}>
-          </figure>
-          <div class="px-2 py-4 w-full">
-            <h2 class=" line-clamp-2 w-full">${card.title}</h2>
-          </div>
-          <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-2">
-            <h2 class="text-gray-500 line-clamp-1 w-full">BDT ${card.price}</h2>
-            <h2 class="text-gray-500 line-clamp-1 w-full">${card.Rating}</h2>
-          </div>
-      `
-
-  cardContainer.appendChild(div)
-});
-
-
-// handle filtaring with category
 const selectedCategoryText = document.getElementById('selectedCategory');
-const mg = document.querySelectorAll('.category');
-const categoryList = document.querySelectorAll('.category')
-categoryList.forEach(selectedCategory => {
-  selectedCategory.addEventListener('click', (e) => {
-    let category = e.target.innerText.toLowerCase();
-    categoryList.forEach(c => c.classList.remove('text-[#ff6f61]'));
-    e.target.classList.add('text-[#ff6f61]');
+const categoryList = document.querySelectorAll('.category');
+const searchInput = document.getElementById('searchProducts');
 
-    selectedCategoryText.innerText = `Category: ${category}`;
+const loadProducts = async () => {
+  try {
+    const response = await fetch('../javaScript/electronics.json');
+    const fashionAndClothes = await response.json();
+    displayProducts(fashionAndClothes);
+    CategoryFilter(fashionAndClothes);
+    search(fashionAndClothes);
+  } catch (error) {
+    console.error("Error loading products:", error);
+  }
+}
 
-    cardContainer.innerHTML = '';
+const displayProducts = (products) => {
+  cardContainer.innerHTML = '';
 
-    electronicsProducts.forEach(card => {
-      if (category === card.category.toLowerCase()) {
-        const imgURL = '.' + card.Image.img1;
+  if (products.length === 0) {
+    cardContainer.innerHTML = `<p class="text-gray-500 text-center mt-5">No products found.</p>`;
+    return;
+  }
 
-        const div = document.createElement('div');
-        div.classList.add('shadow-lg','hover:cursor-pointer','p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
-        div.dataset.product = JSON.stringify(card);
+  products.forEach(card => {
+    const imgURL = '.' + card.Image.img1;
+    const div = document.createElement('div');
+    div.classList.add('shadow-lg', 'hover:cursor-pointer', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
+    div.dataset.product = JSON.stringify(card);
 
-        div.innerHTML = `
-             <figure >
-      
-                   <img class="max-w-full lg:w-full rounded-lg max-h-[200px] lg:h-[200px] object-cover" src=${imgURL} alt=${card.title}>
-                </figure>
-                <div class="px-2 py-4">
-                  <h2 class=" line-clamp-2 w-full">${card.title}</h2>
-                </div>
-                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-2">
-                  <h2 class="text-gray-500 w-full">BDT ${card.price}</h2>
-                  <h2 class="text-gray-500 line-clamp-1 w-full">${card.Rating}</h2>
-                </div>
-            `
-        cardContainer.appendChild(div)
-      }
+    div.innerHTML = `
+      <figure>
+        <img class="max-w-full lg:w-full rounded-lg max-h-[200px] lg:h-[220px] object-cover" src=${imgURL} alt="${card.title}">
+      </figure>
+      <div class="px-2 py-4">
+        <h2 class="line-clamp-2 w-full">${card.title}</h2>
+      </div>
+      <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-2">
+        <h2 class="text-gray-500 line-clamp-2 w-full">BDT ${card.price}</h2>
+        <h2 class="text-gray-500 line-clamp-2 w-full">${card.Rating}</h2>
+      </div>
+    `;
+    cardContainer.appendChild(div);
+  });
+}
+
+// Category filter functionality
+const CategoryFilter = (products) => {
+  categoryList.forEach(selectedCategory => {
+    selectedCategory.addEventListener('click', (e) => {
+      let category = e.target.innerText;
+      categoryList.forEach(c => c.classList.remove('text-[#ff6f61]'));
+      e.target.classList.add('text-[#ff6f61]');
+      selectedCategoryText.innerText = `Category: ${category}`;
+      const filteredProducts = products.filter(card => card.category === category);
+      displayProducts(filteredProducts);
     });
+  });
+}
 
-  })
-});
+// Search functionality
+const search=(products)=> {
+  searchInput.addEventListener('input', (e) => {
+    const searchQuery = e.target.value.toLowerCase().trim();
 
+    const filteredProducts = products.filter(card => card.title.toLowerCase().includes(searchQuery));
+    displayProducts(filteredProducts);
+  });
+}
 
-
-// handle products detials 
+// Handle product details click
 cardContainer.addEventListener('click', (event) => {
   const selectedCard = event.target.closest('.card');
   if (!selectedCard) return;
 
   const productDetails = JSON.parse(selectedCard.dataset.product);
-
   localStorage.setItem('selectedProduct', JSON.stringify(productDetails));
-
   window.location.href = '../view/productDetails.html';
 });
+
+loadProducts();
