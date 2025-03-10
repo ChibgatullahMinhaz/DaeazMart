@@ -9,6 +9,7 @@ const loadProducts = async () => {
   try {
     const response = await fetch('../Data/fashion.json');
     const fashionAndClothes = await response.json();
+    console.log(fashionAndClothes);
     displayProducts(fashionAndClothes);
     CategoryFilter(fashionAndClothes);
     search(fashionAndClothes); 
