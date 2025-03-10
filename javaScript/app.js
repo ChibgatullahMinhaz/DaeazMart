@@ -8,6 +8,8 @@ const jsonFiles = ['../Data/fashion.json', '../Data/electronics.json'];
 const forYoursContainer = document.getElementById('forYours');
 const SearchProducts = document.getElementById('searchedProducts');
 const SearchQuery = document.getElementById('searchProducts');
+const loader = document.getElementById('loader'); 
+loader.classList.remove('hidden');
 
  const  fetchProducts =async()=> {
   try {
@@ -18,6 +20,10 @@ const SearchQuery = document.getElementById('searchProducts');
     handleProductDetails(SearchProducts); 
   } catch (error) {
     console.error('Error fetching product data:', error);
+  }finally {
+    setTimeout(() => {
+      loader.classList.add('hidden'); // Hide loader
+    }, 800);
   }
 }
 

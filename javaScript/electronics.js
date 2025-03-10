@@ -2,16 +2,22 @@ let cardContainer = document.getElementById('cardContainer');
 const selectedCategoryText = document.getElementById('selectedCategory');
 const categoryList = document.querySelectorAll('.category');
 const searchInput = document.getElementById('searchProducts');
+const loader = document.getElementById('loader'); 
+loader.classList.remove('hidden');
 
 const loadProducts = async () => {
   try {
-    const response = await fetch('../javaScript/electronics.json');
+    const response = await fetch('../Data/electronics.json');
     const fashionAndClothes = await response.json();
     displayProducts(fashionAndClothes);
     CategoryFilter(fashionAndClothes);
     search(fashionAndClothes);
   } catch (error) {
     console.error("Error loading products:", error);
+  }finally {
+    setTimeout(() => {
+      loader.classList.add('hidden'); // Hide loader
+    }, 800);
   }
 }
 
