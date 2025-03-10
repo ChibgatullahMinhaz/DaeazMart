@@ -5,7 +5,7 @@ const searchInput = document.getElementById('searchProducts');
 
 const loadProducts = async () => {
   try {
-    const response = await fetch('../javaScript/data.json');
+    const response = await fetch('../Data/data.json');
     const fashionAndClothes = await response.json();
     displayProducts(fashionAndClothes);
     CategoryFilter(fashionAndClothes);

@@ -5,7 +5,7 @@ const searchInput = document.getElementById('searchProducts');
 
 const loadProducts = async () => {
   try {
-    const response = await fetch('../javaScript/data.json');
+    const response = await fetch('../Data/fashion.json');
     const fashionAndClothes = await response.json();
     displayProducts(fashionAndClothes);
     CategoryFilter(fashionAndClothes);
@@ -26,7 +26,8 @@ const displayProducts = (products) => {
   products.forEach(card => {
     const imgURL = '.' + card.Image.img1;
     const div = document.createElement('div');
-    div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'max-w-sm', 'rounded-lg', 'h-auto', 'card');
+    div.classList.add('shadow-lg', 'p-3', 'overflow-hidden', 'hover:cursor-pointer', 'max-w-sm', 'rounded-lg', 'h-auto', 'card', 'bg-white');
+
     div.dataset.product = JSON.stringify(card);
 
     div.innerHTML = `

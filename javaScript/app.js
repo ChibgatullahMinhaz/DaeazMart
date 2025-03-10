@@ -2,7 +2,7 @@ document.documentElement.style.scrollBehavior = "smooth";
 
 let Allproduct = [];
 
-const jsonFiles = ['../javaScript/data.json', '../javaScript/electronics.json'];
+const jsonFiles = ['../Data/fashion.json', '../Data/electronics.json'];
 
 // Containers
 const forYoursContainer = document.getElementById('forYours');
