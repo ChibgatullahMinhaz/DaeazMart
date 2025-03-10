@@ -15,3 +15,49 @@ header{
 
 
 
+
+  .multi-color-spinner {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    animation: multiColorSpin 2.5s linear infinite;
+  }
+
+  @keyframes multiColorSpin {
+    0% { 
+      border-top-color: yellow;
+      border-right-color: #2d4059;
+      border-bottom-color: orange;
+      border-left-color: red;
+      transform: rotate(0deg); 
+    }
+    35% { 
+      border-top-color: blue;
+      border-right-color: orange;
+      border-bottom-color: red;
+      border-left-color: yellow;
+      transform: rotate(130deg); 
+    }
+    50% { 
+      border-top-color: red;
+      border-right-color: yellow;
+      border-bottom-color: blue;
+      border-left-color: orange;
+      transform: rotate(180deg); 
+    }
+    75% { 
+      border-top-color: orange;
+      border-right-color: red;
+      border-bottom-color: yellow;
+      border-left-color: blue;
+      transform: rotate(270deg); 
+    }
+    100% { 
+      border-top-color: yellow;
+      border-right-color: blue;
+      border-bottom-color: orange;
+      border-left-color: red;
+      transform: rotate(360deg); 
+    }
+  }

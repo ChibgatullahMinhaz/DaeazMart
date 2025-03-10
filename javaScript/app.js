@@ -23,7 +23,7 @@ loader.classList.remove('hidden');
   }finally {
     setTimeout(() => {
       loader.classList.add('hidden'); // Hide loader
-    }, 800);
+    }, 1000);
   }
 }
 

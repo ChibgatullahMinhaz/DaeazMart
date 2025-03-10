@@ -3,7 +3,6 @@ const productData = localStorage.getItem('selectedProduct');
 
 // selecting elemnts 
 const setTitle = document.getElementById('cardTitle');
-console.log(setTitle);
 const prodtctPrice = document.getElementById('price');
 const productImage = document.getElementById('productImage');
 
