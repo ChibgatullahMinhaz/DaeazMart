@@ -1,5 +1,16 @@
 [
     {
+        "title": "Design Regular Panjabi For Men",
+        "price": "3,400",
+        "category": "Men's Clothins",
+        "Image": {
+            "img1": "./assets/mensClothins/panjabi3.jpg",
+            "img2": "./assets/mensClothins/panjabi3.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
         "title": "ProSeed Handmade Pure Lanolin Cream – Unrefined Balm for Moms, Baby Care & Nursing – Gentle Moisturizer for Dry Skin, Lips, Hands & Face – Petroleum-Free, 8oz",
         "price": "3,400",
         "category": "Beauty & Grooming",
@@ -15,8 +26,30 @@
         "price": "3,400",
         "category": "Men's Clothins",
         "Image": {
-            "img1": "./assets/BeautyGrooming/stripPoloT-shirt.webp",
-            "img2": "./assets/BeautyGrooming/stripPoloT-shirt.webp"
+            "img1": "./assets/mensClothins/stripPoloT-shirt.webp",
+            "img2": "./assets/mensClothins/stripPoloT-shirt.webp"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Rig Master Embroidery Cotton Panjabi for Men - Teal - 1510",
+        "price": "3,400",
+        "category": "Men's Clothins",
+        "Image": {
+            "img1": "./assets/mensClothins/panjabi1.png",
+            "img2": "./assets/mensClothins/panjabi1.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Grey Casual Panjabi for Men by adlib",
+        "price": "3,400",
+        "category": "Men's Clothins",
+        "Image": {
+            "img1": "./assets/mensClothins/pnajabi2.jpg",
+            "img2": "./assets/mensClothins/pnajabi2.jpg"
         },
         "Rating": "⭐⭐⭐⭐⭐",
         "buyNow": "https://www.daraz.com.bd/"

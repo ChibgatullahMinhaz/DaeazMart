@@ -9,7 +9,6 @@ const loadProducts = async () => {
   try {
     const response = await fetch('../Data/fashion.json');
     const fashionAndClothes = await response.json();
-    console.log(fashionAndClothes);
     displayProducts(fashionAndClothes);
     CategoryFilter(fashionAndClothes);
     search(fashionAndClothes); 
@@ -17,7 +16,7 @@ const loadProducts = async () => {
     console.error("Error loading products:", error);
   }finally {
     setTimeout(() => {
-      loader.classList.add('hidden'); // Hide loader
+      loader.classList.add('hidden'); 
     }, 800);
   }
 }
@@ -39,7 +38,7 @@ const displayProducts = (products) => {
 
     div.innerHTML = `
       <figure>
-        <img class="max-w-full lg:w-full rounded-lg max-h-[200px] lg:h-[220px] object-cover" src=${imgURL} alt="${card.title}">
+        <img class="max-w-full lg:w-full  rounded-xl max-h-[200px] lg:h-full object-contain" src=${imgURL} alt="${card.title}">
       </figure>
       <div class="px-2 py-4">
         <h2 class="line-clamp-2 w-full">${card.title}</h2>
