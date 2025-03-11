@@ -18,21 +18,27 @@
 
 <body>
   <header class="sticky top-0 z-40">
-    <div class="flex items-center justify-between sticky bg-[#2d4059]  px-4 py-1 text-yellow-100">
-      <p class="hidden lg:block">Please Call us to check the Stock before Placing the order!</p>
-      <p class="lg:hidden">Contact: 099.........</p>
-      <p><i class="fa-solid fa-cart-shopping">0</i></p>
-    </div>
-    
-    <nav class="sticky flex flex-row gap-y-3 items-center justify-between px-2 py-2 lg:p-6 w-full bg-[#2d4059]">
+    <nav class="sticky flex flex-row items-center justify-between px-2 py-2 lg:px-6  bg-[#2d4059]">
       <div id="logo">
-        <h1 class="text-lg lg:text-3xl font-bold  text-[#ff6f61]">Daeaz<span class="text-[#f5f5f5]">Mart</span></h1>
+        <h1 class="text-lg lg:text-3xl font-bold text-[#ff6f61]">Daeaz<span class="text-[#f5f5f5]">Mart</span></h1>
       </div>
-      <div>
-        <input class="border-2 rounded-md outline-none p-1 sm:p-2 focus:text-yellow-100  placeholder:text-yellow-100 border-[#ff6f61]" value=""
-          type="search" name="search" id="searchProducts" placeholder="Search Products">
+      
+      <div class="flex items-center justify-between sticky bg-[#2d4059]  px-4 py-1 text-yellow-100">
+     
+        <div class="flex justify-between gap-x-6 items-center  text-[#fef9c3]">
+          <i class="fa-solid fa-user-plus cursor-pointer" id="loginbtn"></i>
+          <p><i class="fa-solid fa-cart-shopping">0</i></p>
+        </div>
+  
       </div>
+
     </nav>
+
+    <div class="bg-[#2d4059] text-white flex justify-center items-center py-2 lg:py-4">
+      <input class="border-2 w-[90%] md:w-[50%] rounded-md outline-none p-1 sm:p-2 focus:text-yellow-100  placeholder:text-yellow-100 border-[#ff6f61]" value=""
+        type="search" name="search" id="searchProducts" placeholder="Search Products">
+    </div>
+
 
     <section>
       <div class="dropdown dropdown-bottom">
@@ -56,6 +62,26 @@
   </header>
 
   <main class="max-w-[95%] mx-auto mt-6 lg:mt-10 grid grid-cols-1 md:grid-cols-5 min-h-screen">
+        <!-- login modal -->
+        <section id="logModal" class="z-10 absolute top-[40%] left-0 right-0 mx-auto bg-[#2d4059] w-[80%] lg:w-[35%] rounded-lg hidden">
+          <div class="hero-content flex-col lg:flex-row-reverse"> 
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                 <form class="fieldset">
+                  <label class="fieldset-label">Email</label>
+                  <input type="email" value="m@gamil.com" class="input email" placeholder="Email"  required/>
+                  <label class="fieldset-label">Password</label>
+                  <input type="password" class="input password" placeholder="Password" required/>
+                  <div><a class="link link-hover">Forgot password?</a></div>
+                  <button id="login" class="btn btn-neutral mt-4">Login</button>
+                 </form>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+      </section>
+    
  <!-- looding Spinner -->
  <div id="loader" class="z-10 hidden fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white/90">
   <div class="multi-color-spinner"></div>
