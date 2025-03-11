@@ -2,7 +2,8 @@ let cardContainer = document.getElementById('cardContainer');
 const selectedCategoryText = document.getElementById('selectedCategory');
 const categoryList = document.querySelectorAll('.category');
 const searchInput = document.getElementById('searchProducts'); 
-
+const loader = document.getElementById('loader'); 
+loader.classList.remove('hidden');
 const loadProducts = async () => {
   try {
     const response = await fetch('../Data/fashion.json');
@@ -12,6 +13,10 @@ const loadProducts = async () => {
     search(fashionAndClothes); 
   } catch (error) {
     console.error("Error loading products:", error);
+  }finally {
+    setTimeout(() => {
+      loader.classList.add('hidden'); 
+    }, 1000);
   }
 }
 
