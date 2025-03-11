@@ -2,9 +2,9 @@
 const productData = localStorage.getItem('selectedProduct');
 
 // selecting elemnts 
-const setTitle = document.getElementById('cardTitle');
+const setTitle = document.getElementById('product-name');
 const prodtctPrice = document.getElementById('price');
-const productImage = document.getElementById('productImage');
+const productImage = document.getElementById('product-image');
 
 
 if (!productData) {
@@ -16,7 +16,7 @@ if (!productData) {
     prodtctPrice.innerText = `BDT ${price}`;
     const convertedPrice = parseFloat(price.replace(/,/g, ''));
     productImage.src = '.' + Image.img1;
-    // productImage.alt = title
+    productImage.alt = title
 
 }
 

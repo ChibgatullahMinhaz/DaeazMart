@@ -2,7 +2,7 @@ document.documentElement.style.scrollBehavior = "smooth";
 
 let Allproduct = [];
 
-const jsonFiles = ['../Data/fashion.json', '../Data/electronics.json'];
+const jsonFiles = ['../Data/homekitchen.json','../Data/babyKids.json','../Data/fashion.json', '../Data/electronics.json'];
 
 // Containers
 const forYoursContainer = document.getElementById('forYours');
@@ -92,26 +92,3 @@ function handleProductDetails(container) {
 
 fetchProducts();
 
-
-// handle login modal
-const loginbtn = document.getElementById('loginbtn');
-loginbtn.addEventListener('click', (e) => {
-  e.preventDefault()
-  document.getElementById('logModal').classList.remove('hidden')
-})
-
-const AdminLogin = () => {
-  document.getElementById('login').addEventListener('click', (e) => {
-    e.preventDefault()
-    const email = document.querySelector('.email').value;
-    const password = document.querySelector('.password').value;
-    if (email === 'admin@gamil.com' && password === 'admin') {
-      window.location.href = './admin/admin.html'
-    } else {
-      alert('Invalid Admin Email & Password')
-      document.getElementById('logModal').classList.add('hidden')
-
-    }
-  })
-}
-AdminLogin();
