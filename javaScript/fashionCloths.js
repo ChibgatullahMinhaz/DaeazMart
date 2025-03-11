@@ -38,7 +38,7 @@ const displayProducts = (products) => {
 
     div.innerHTML = `
       <figure>
-        <img class="max-w-full lg:w-full  rounded-xl max-h-[200px] lg:h-full object-contain" src=${imgURL} alt="${card.title}">
+        <img class="max-w-full lg:w-full rounded-xl h-[200px] object-cover" src=${imgURL} alt="${card.title}">
       </figure>
       <div class="px-2 py-4">
         <h2 class="line-clamp-2 w-full">${card.title}</h2>
@@ -70,7 +70,6 @@ function CategoryFilter(products) {
 function search(products) {
   searchInput.addEventListener('input', (e) => {
     const searchQuery = e.target.value.toLowerCase().trim();
-
     const filteredProducts = products.filter(card => card.title.toLowerCase().includes(searchQuery));
     displayProducts(filteredProducts);
   });

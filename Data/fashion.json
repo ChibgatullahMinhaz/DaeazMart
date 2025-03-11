@@ -1,11 +1,241 @@
 [
     {
-        "title": "Design Regular Panjabi For Men",
+        "title": "Whipped Grass-Fed Beef Tallow cream, frankincense tallow balm for skin, dry skin body butter, whipped tallow Face and Body moisturizer 4fl.oz (Frankincense)",
         "price": "3,400",
+        "category": "Beauty & Grooming",
+        "Image": {
+            "img1": "./assets/BeautyGrooming/Whipped.png",
+            "img2": "./assets/BeautyGrooming/Whipped.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Stylestry Chunky Platform White High Heels For Women & Girls",
+        "price": "3,400",
+        "category": "Footwear",
+        "Image": {
+            "img1": "./assets/Footwear/chunky.png",
+            "img2": "./assets/Footwear/chunky.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Beef Tallow Balm for Skin Care - All Natural Moisturizing Body Oil with Honey and Beeswax - Tallow from Grass-Fed Cows – Beef Tallow Moisturizer,-Made in USA (2.0 Oz)",
+        "price": "3,400",
+        "category": "Beauty & Grooming",
+        "Image": {
+            "img1": "./assets/BeautyGrooming/beauty.webp",
+            "img2": "./assets/BeautyGrooming/beauty.webp"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Handmade 100% Organic Grass-Fed Tallow Skin Balm & Raw Wild Honey (2oz) | Full Body & Face Moisturizer | Whipped & Unscented Balm",
+        "price": "3,400",
+        "category": "Beauty & Grooming",
+        "Image": {
+            "img1": "./assets/BeautyGrooming/Handmade.jpg",
+            "img2": "./assets/BeautyGrooming/Handmade.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Running Sneakers White Color Casual Lace-up Shoes Winter and Summer Men's Shoes",
+        "price": "3,400",
+        "category": "Footwear",
+        "Image": {
+            "img1": "./assets/Footwear/show.jpg",
+            "img2": "./assets/Footwear/show.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Sneakers Casual Lace-up skateboard shoes Men's Shoes Collection by Trendy Man",
+        "price": "3,400",
+        "category": "Footwear",
+        "Image": {
+            "img1": "./assets/Footwear/shose.jpg",
+            "img2": "./assets/Footwear/shose.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Cheap shopping  Girls Shoes",
+        "price": "3,400",
+        "category": "Footwear",
+        "Image": {
+            "img1": "./assets/Footwear/girls.png",
+            "img2": "./assets/Footwear/girls.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "high heels for girls, women for party, wedding",
+        "price": "3,400",
+        "category": "Footwear",
+        "Image": {
+            "img1": "./assets/Footwear/heels.jpg",
+            "img2": "./assets/Footwear/heels.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "K Footlance Kids Boys Oggy Oggi Sports Shoes Casual Shoes",
+        "price": "3,400",
+        "category": "Footwear",
+        "Image": {
+            "img1": "./assets/Footwear/boys.png",
+            "img2": "./assets/Footwear/boys.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Furdeour Girls Sandals Glittler Bow Dress Shoes Princess Dress Shoes High Heels Party Wedding Flower Girls Shoes for Kid Toddler",
+        "price": "3,400",
+        "category": "Footwear",
+        "Image": {
+            "img1": "./assets/Footwear/download.jpg",
+            "img2": "./assets/Footwear/download.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "China Fabric Formal Pant Trouser Type For Man By MCL",
+        "price": "3,400",
+        "category": "Men's Clothins",
+        "Image": {
+            "img1": "./assets/mensClothins/pent1.png",
+            "img2": "./assets/mensClothins/pent1.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Stylestry high heels for Women & Girls",
+        "price": "3,400",
+        "category": "Footwear",
+        "Image": {
+            "img1": "./assets/Footwear/heighHeel.jpg",
+            "img2": "./assets/Footwear/heighHeel.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Unstitched Boutique Three Piece 002",
+        "price": "700",
+        "category": "Women's Clothins",
+        "Image": {
+            "img1": "./assets/womenclothes/threepice.webp",
+            "img2": "./assets/womenclothes/threepice.webp"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Chanderi Silk Saree for Women",
+        "price": "700",
+        "category": "Women's Clothins",
+        "Image": {
+            "img1": "./assets/womenclothes/sareewomen.webp",
+            "img2": "./assets/womenclothes/sareewomen.webp"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Dazzling Bridal Saree Designs: Your Ultimate Guide to Elegance and Style!",
+        "price": "7,000",
+        "category": "Women's Clothins",
+        "Image": {
+            "img1": "./assets/womenclothes/saree.webp",
+            "img2": "./assets/womenclothes/saree.webp"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Ladies Cocolate Color Awsome Three Piece ",
+        "price": "400",
+        "category": "Women's Clothins",
+        "Image": {
+            "img1": "./assets/womenclothes/threepice1.jpg",
+            "img2": "./assets/womenclothes/threepice1.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Embrace the Grace of Pink with our Exclusive Indian Soft Party Saree - A Symphony of Style and Comfor ","price": "3,400",
+        "category": "Women's Clothins",
+        "Image": {
+            "img1": "./assets/womenclothes/images.jpg",
+            "img2": "./assets/womenclothes/images.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": " VILLAGIUS Self Design, Dyed Bollywood Georgette Saree (Black)",
+        "price": "3,400",
+        "category": "Women's Clothins",
+        "Image": {
+            "img1": "./assets/womenclothes/blackSaree1.png",
+            "img2": "./assets/womenclothes/blackSaree.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Pants For Men: Buy Men's Pants",
+        "price": "3,400",
+        "category": "Men's Clothins",
+        "Image": {
+            "img1": "./assets/mensClothins/pant3.png",
+            "img2": "./assets/mensClothins/pant3.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "PANT - Top Ten Mart",
+        "price": "3,400",
+        "category": "Men's Clothins",
+        "Image": {
+            "img1": "./assets/mensClothins/pent2.jpg",
+            "img2": "./assets/mensClothins/pent2.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Design Regular Panjabi For Men",
+        "price": "900",
         "category": "Men's Clothins",
         "Image": {
             "img1": "./assets/mensClothins/panjabi3.jpg",
             "img2": "./assets/mensClothins/panjabi3.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Printed Cotton Panjabi for Men",
+        "price": "3,100",
+        "category": "Men's Clothins",
+        "Image": {
+            "img1": "./assets/mensClothins/panjabi4.jpg",
+            "img2": "./assets/mensClothins/panjabi4.jpg"
         },
         "Rating": "⭐⭐⭐⭐⭐",
         "buyNow": "https://www.daraz.com.bd/"
@@ -22,7 +252,7 @@
         "buyNow": "https://www.daraz.com.bd/"
     },
     {
-        "title": "Strip Polo T-Shirt",
+        "title": "Strip Stylish Polo T-Shirt for Men's",
         "price": "3,400",
         "category": "Men's Clothins",
         "Image": {
@@ -110,12 +340,155 @@
         "buyNow": "https://www.daraz.com.bd/"
     },
     {
+        "title": "BNS Children's Fashion High Quality korean dress for kids girl casual clothes to to to to to to to 10 to 11 to 12 to 13 year old",
+        "price": "3,600",
+        "category": "Kids'Clothing",
+        "Image": {
+            "img1": "./assets/kidsclothes/kids.png",
+            "img2": "./assets/kidsclothes/kids.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Little Girls Heart Print Hoodie Shirts Top and Philippines Ubuy",
+        "price": "3,600",
+        "category": "Kids'Clothing",
+        "Image": {
+            "img1": "./assets/kidsclothes/kid.png",
+            "img2": "./assets/kidsclothes/kid.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "How to Get the Most Out of Your Kids Clothes",
+        "price": "1,600",
+        "category": "Kids'Clothing",
+        "Image": {
+            "img1": "./assets/kidsclothes/kid1.jpeg",
+            "img2": "./assets/kidsclothes/kid1.jpeg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "The Ultimate Men's Formal Wear Checklist for 2025",
+        "price": "1,600",
+        "category": "Formal Wear",
+        "Image": {
+            "img1": "./assets/kidsclothes/formal.webp",
+            "img2": "./assets/kidsclothes/formal.webp"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Formal Dresses for Women Office Wear Dubai",
+        "price": "1,600",
+        "category": "Formal Wear",
+        "Image": {
+            "img1": "./assets/kidsclothes/images.jpg",
+            "img2": "./assets/kidsclothes/images.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Formal Dresses for Women Office Wear Dubai",
+        "price": "3,600",
+        "category": "Formal Wear",
+        "Image": {
+            "img1": "./assets/kidsclothes/women-formal-1.png",
+            "img2": "./assets/kidsclothes/women-formal-1.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Formal Wear Women s Suits for Women Office Wear Dubai",
+        "price": "5,600",
+        "category": "Formal Wear",
+        "Image": {
+            "img1": "./assets/kidsclothes/146408055_max.jpg",
+            "img2": "./assets/kidsclothes/146408055_max.jpg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
         "title": "Men's casual jackets: Stylish, comfortable, and perfect for everyday wear.",
         "price": "30,400",
         "category": "Seasonal Wear",
         "Image": {
             "img1": "./assets/SeasonalWear/jacket-6.png",
             "img2": "./assets/SeasonalWear/jacket-6.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "livho Oval Trendy Polarized Sunglasses Women Men, Retro Sun Glasses for Women Men 2025, Vintage Classic UV Protection Shades",
+        "price": "1,800",
+        "category": "Fashion Accesories",
+        "Image": {
+            "img1": "./assets/BeautyGrooming/livo.png",
+            "img2": "./assets/BeautyGrooming/livo.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Acefast W1 ANC ENC TWS Earbuds",
+        "price": "1,800",
+        "category": "Fashion Accesories",
+        "Image": {
+            "img1": "./assets/Earbuds/acefast-w1-anc-true-wireless-earbuds-black.png",
+            "img2": "./assets/Earbuds/acefast-w1-anc-true-wireless-earbuds.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "SoundPEATS T3 Pro ANC Earbuds – Black",
+        "price": "1,900",
+        "category": "Fashion Accesories",
+        "Image": {
+            "img1": "./assets/Earbuds/kryinternational.png",
+            "img2": "./assets/Earbuds/1_3e964110-cef5-496b-ac15-d4dda5246c2e_900x.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "Anker Soundcore R50i True Wireless Earbuds – Black Color",
+        "price": "2,000",
+        "category": "Fashion Accesories",
+        "Image": {
+            "img1": "./assets/Earbuds/Anker-Soundcore-R50i-True-Wireless-Earbuds-Black-Color.jpeg",
+            "img2": "./assets/Earbuds/Anker-Soundcore-R50i-True-Wireless-Earbuds-Black-Color.jpeg"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "SIM Supported Kids Smart Watch (Smart2023 C005) – Pink Color",
+        "price": "1,200",
+        "category": "Fashion Accesories",
+        "Image": {
+            "img1": "./assets/watch/SIM-Supported-Kids-Smart-Watch-Smart2023-C005-Pink-Color.jpg",
+            "img2": "./assets/watch/kieslect_kr2_bluetooth_calling_smart_watch_2.png"
+        },
+        "Rating": "⭐⭐⭐⭐⭐",
+        "buyNow": "https://www.daraz.com.bd/"
+    },
+    {
+        "title": "SIM Supported Kids Smart Watch (Smartberry C005) – Black Color",
+        "price": "1,200",
+        "category": "Fashion Accesories",
+        "Image": {
+            "img1": "./assets/watch/SIM-Supported-Kids-Smartwatch-Black.jpg",
+            "img2": "./assets/watch/kieslect_kr2_bluetooth_calling_smart_watch_2.png"
         },
         "Rating": "⭐⭐⭐⭐⭐",
         "buyNow": "https://www.daraz.com.bd/"

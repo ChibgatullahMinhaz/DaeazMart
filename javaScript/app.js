@@ -22,7 +22,7 @@ loader.classList.remove('hidden');
     console.error('Error fetching product data:', error);
   }finally {
     setTimeout(() => {
-      loader.classList.add('hidden'); // Hide loader
+      loader.classList.add('hidden'); 
     }, 1000);
   }
 }
@@ -46,7 +46,7 @@ function loadProducts(products, container) {
     div.dataset.product = JSON.stringify(card);
     div.innerHTML = `
       <figure>
-        <img class="max-w-full lg:w-full rounded-lg max-h-[200px] lg:h-[200px] object-cover" src="${card.Image.img1}" alt="${card.title}">
+        <img class="max-w-full lg:w-full rounded-lg h-[200px] object-cover" src="${card.Image.img1}" alt="${card.title}">
       </figure>
       <div class="px-2 py-4">
         <h2 class="line-clamp-2 w-full cart-title">${card.title}</h2>

@@ -37,7 +37,7 @@ const displayProducts = (products) => {
 
     div.innerHTML = `
       <figure>
-        <img class="max-w-full lg:w-full rounded-lg max-h-[200px] lg:h-[220px] object-cover" src=${imgURL} alt="${card.title}">
+        <img class="max-w-full lg:w-full rounded-lg h-[220px] object-cover" src=${imgURL} alt="${card.title}">
       </figure>
       <div class="px-2 py-4">
         <h2 class="line-clamp-2 w-full">${card.title}</h2>
