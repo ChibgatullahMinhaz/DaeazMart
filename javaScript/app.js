@@ -1,5 +1,3 @@
-document.documentElement.style.scrollBehavior = "smooth";
-
 let Allproduct = [];
 const jsonFiles = ['../Data/homekitchen.json','../Data/babyKids.json','../Data/fashion.json', '../Data/electronics.json'];
 
@@ -7,10 +5,10 @@ const jsonFiles = ['../Data/homekitchen.json','../Data/babyKids.json','../Data/f
 const forYoursContainer = document.getElementById('forYours');
 const SearchProducts = document.getElementById('searchedProducts');
 const SearchQuery = document.getElementById('searchProducts');
-loader.classList.remove('hidden');
 
- const  fetchProducts =async()=> {
+ const  loadData =async()=> {
   try {
+    showLoader();
     const responses = await Promise.all(jsonFiles.map(file => fetch(file).then(res => res.json())));
     Allproduct = responses.flat();
     loadProducts(Allproduct, forYoursContainer);
@@ -19,9 +17,7 @@ loader.classList.remove('hidden');
   } catch (error) {
     console.error('Error fetching product data:', error);
   }finally {
-    setTimeout(() => {
-      loader.classList.add('hidden'); 
-    }, 1000);
+    hideLoader();
   }
 }
 
@@ -88,5 +84,5 @@ function handleProductDetails(container) {
   });
 }
 
-fetchProducts();
+loadData();
 
