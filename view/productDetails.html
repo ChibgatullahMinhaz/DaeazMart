@@ -28,7 +28,7 @@
      
         <div class="flex justify-between gap-x-6 items-center  text-[#fef9c3]">
           <i class="fa-solid fa-user-plus cursor-pointer" id="loginbtn"></i>
-          <p><i class="fa-solid fa-cart-shopping">0</i></p>
+          <p id="ShoppingCart" <i class="fa-solid fa-cart-shopping text-2xl"> <span class="text-sm" id="cartQuantity">0</span> </i></p>
         </div>
   
       </div>
@@ -135,25 +135,8 @@
               </div>
             </div>
           </div>
-  
-          <!-- Checkout Button Container (Centered Below Image & Text) -->
-          <div
-            id="checkout-container"
-            class="mt-6 flex justify-center w-full hidden"
-          >
-            <button
-              id="checkout-btn"
-              class="px-6 py-2 bg-orange-400 text-white rounded-3xl shadow-lg hover:bg-orange-500 flex items-center"
-            >
-              Checkout
-              <span
-                class="ml-2 bg-white text-orange-500 rounded-lg w-6 h-6 flex items-center justify-center text-xs font-bold"
-                id="cart-count"
-              >
-                0
-              </span>
-            </button>
-          </div>
+
+
         </div>
       </div>
   

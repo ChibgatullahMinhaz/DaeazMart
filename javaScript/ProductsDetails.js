@@ -67,6 +67,23 @@ const fetchRelatedProduct = async () => {
 }
 fetchRelatedProduct();
 
+// hanlde add to cart 
+document.getElementById('ShoppingCart').addEventListener('click', (e)=>{
+    document.getElementById('cart-modal').classList.remove('hidden')
+})
+document.getElementById('continue-shopping').addEventListener('click', (e)=>{
+    document.getElementById('cart-modal').classList.add('hidden')
+
+})
+document.getElementById('add-to-cart').addEventListener('click', (e)=>{
+    let Quantity  = document.getElementById('cartQuantity').innerText;
+    let convertedQuantity= parseFloat(Quantity)
+    convertedQuantity = convertedQuantity + 1
+    document.getElementById('cartQuantity').innerText = convertedQuantity;
+    localStorage.setItem('productQuantity', convertedQuantity)
+    // start code here
+})
+
 cartContainer.addEventListener('click', (event) => {
     const selectedCard = event.target.closest('.card');
     if (!selectedCard) return;

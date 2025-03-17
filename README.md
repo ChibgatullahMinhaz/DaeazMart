@@ -12,6 +12,6 @@
 
 ### Intregate payment method with ssl
 
-### add to cart checkout
+### add to cart 
 
 ### checkout
