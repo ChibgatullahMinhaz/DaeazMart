@@ -1,18 +1,18 @@
-const findlogo = ()=>{
-    document.getElementById('logo').addEventListener('click',()=>{
-        window.location.href = '../index.html';
-    });
+const findlogo = () => {
+  document.getElementById('logo').addEventListener('click', () => {
+    window.location.href = '../index.html';
+  });
 }
 findlogo();
 
 
 // handle login modal
 const handleLoginModal = () => {
-const loginbtn = document.getElementById('loginbtn');
-loginbtn.addEventListener('click', (e) => {
-  e.preventDefault()
-  document.getElementById('logModal').classList.remove('hidden')
-})
+  const loginbtn = document.getElementById('loginbtn');
+  loginbtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    document.getElementById('logModal').classList.remove('hidden')
+  })
 }
 handleLoginModal();
 const AdminLogin = () => {
@@ -32,26 +32,29 @@ const AdminLogin = () => {
 }
 // handle login modal
 AdminLogin();
-
+// looder funtinlaity 
+const showLoader = () => {
+  document.getElementById('loader').classList.remove('hidden')
+}
+const hideLoader = () => {
+  document.getElementById('loader').classList.add('hidden')
+}
 // fetch Data and Displayed 
 let cardContainer = document.getElementById('cardContainer');
 const selectedCategoryText = document.getElementById('selectedCategory');
 const categoryList = document.querySelectorAll('.category');
 const searchInput = document.getElementById('searchProducts');
-const loader = document.getElementById('loader'); 
-loader.classList.remove('hidden');
 
 const fetchProductss = async (url, callbackFn) => {
   try {
+    showLoader();
     const response = await fetch(url);
     const Data = await response.json();
-   callbackFn(Data)
+    callbackFn(Data)
   } catch (error) {
     console.error("Error loading products:", error);
-  }finally {
-    setTimeout(() => {
-      loader.classList.add('hidden'); 
-    }, 1000);
+  } finally {
+    hideLoader();
   }
 }
 
@@ -101,7 +104,7 @@ const CategoryFilter = (products) => {
 }
 
 // Search functionality
-const search=(products)=> {
+const search = (products) => {
   searchInput.addEventListener('input', (e) => {
     const searchQuery = e.target.value.toLowerCase().trim();
 
@@ -110,12 +113,4 @@ const search=(products)=> {
   });
 }
 
-// Handle product details click
-cardContainer.addEventListener('click', (event) => {
-  const selectedCard = event.target.closest('.card');
-  if (!selectedCard) return;
 
-  const productDetails = JSON.parse(selectedCard.dataset.product);
-  localStorage.setItem('selectedProduct', JSON.stringify(productDetails));
-  window.location.href = '../view/productDetails.html';
-});
