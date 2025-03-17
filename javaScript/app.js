@@ -1,14 +1,12 @@
 document.documentElement.style.scrollBehavior = "smooth";
 
 let Allproduct = [];
-
 const jsonFiles = ['../Data/homekitchen.json','../Data/babyKids.json','../Data/fashion.json', '../Data/electronics.json'];
 
 // Containers
 const forYoursContainer = document.getElementById('forYours');
 const SearchProducts = document.getElementById('searchedProducts');
 const SearchQuery = document.getElementById('searchProducts');
-const loader = document.getElementById('loader'); 
 loader.classList.remove('hidden');
 
  const  fetchProducts =async()=> {
