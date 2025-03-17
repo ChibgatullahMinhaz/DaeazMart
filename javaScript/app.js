@@ -1,12 +1,6 @@
 let Allproduct = [];
 const jsonFiles = ['../Data/homekitchen.json','../Data/babyKids.json','../Data/fashion.json', '../Data/electronics.json'];
-
-// Containers
-const forYoursContainer = document.getElementById('forYours');
-const SearchProducts = document.getElementById('searchedProducts');
-const SearchQuery = document.getElementById('searchProducts');
-
- const  loadData =async()=> {
+const  loadData =async()=> {
   try {
     showLoader();
     const responses = await Promise.all(jsonFiles.map(file => fetch(file).then(res => res.json())));
@@ -14,13 +8,13 @@ const SearchQuery = document.getElementById('searchProducts');
     loadProducts(Allproduct, forYoursContainer);
     handleProductDetails(forYoursContainer); 
     handleProductDetails(SearchProducts); 
+    // reletedProducts(Allproduct);
   } catch (error) {
     console.error('Error fetching product data:', error);
   }finally {
     hideLoader();
   }
 }
-
 // display products
 function loadProducts(products, container) {
   container.innerHTML = '';
@@ -69,7 +63,7 @@ SearchQuery.addEventListener('input', (e) => {
   SearchProducts.classList.add('grid', 'grid-cols-2', 'sm:grid-cols-3', 'lg:grid-cols-5', 'gap-4', 'py-8');
 
   loadProducts(searchedProducts, SearchProducts);
-  handleProductDetails(SearchProducts); // Reattach event listener after search
+  handleProductDetails(SearchProducts);
 });
 
 // Handle product details 

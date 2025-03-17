@@ -1,3 +1,14 @@
+// Containers
+const forYoursContainer = document.getElementById('forYours');
+const SearchProducts = document.getElementById('searchedProducts');
+const SearchQuery = document.getElementById('searchProducts');
+// fetch data and display
+let cardContainer = document.getElementById('cardContainer');
+const selectedCategoryText = document.getElementById('selectedCategory');
+const categoryList = document.querySelectorAll('.category');
+const searchInput = document.getElementById('searchProducts');
+
+
 const findlogo = () => {
   document.getElementById('logo').addEventListener('click', () => {
     window.location.href = '../index.html';
@@ -40,10 +51,6 @@ const hideLoader = () => {
   document.getElementById('loader').classList.add('hidden')
 }
 // fetch Data and Displayed 
-let cardContainer = document.getElementById('cardContainer');
-const selectedCategoryText = document.getElementById('selectedCategory');
-const categoryList = document.querySelectorAll('.category');
-const searchInput = document.getElementById('searchProducts');
 
 const fetchProductss = async (url, callbackFn) => {
   try {
@@ -58,6 +65,7 @@ const fetchProductss = async (url, callbackFn) => {
   }
 }
 
+// related product load 
 
 const displayProducts = (products) => {
   cardContainer.innerHTML = '';

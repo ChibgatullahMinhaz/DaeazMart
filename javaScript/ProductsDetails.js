@@ -1,4 +1,10 @@
-
+const findlogo = () => {
+    document.getElementById('logo').addEventListener('click', () => {
+      window.location.href = '../index.html';
+    });
+  }
+  findlogo();
+  
 const productData = localStorage.getItem('selectedProduct');
 
 // selecting elemnts 
@@ -20,3 +26,19 @@ if (!productData) {
 
 }
 
+// suggestion related products 
+let relatedAllproduct = [];
+
+const jsonFiles = ['../Data/homekitchen.json','../Data/babyKids.json','../Data/fashion.json', '../Data/electronics.json'];
+
+const  fetchRelatedProduct =async()=> {
+    try {
+      const responses = await Promise.all(jsonFiles.map(file => fetch(file).then(res => res.json())));
+      relatedAllproduct = responses.flat();
+console.log(relatedAllproduct);
+    } catch (error) {
+      console.error('Error fetching product data:', error);
+    }finally {
+    }
+  }
+  fetchRelatedProduct()
