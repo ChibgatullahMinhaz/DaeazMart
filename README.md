@@ -6,8 +6,12 @@
 
 ### Live Search Funtionality
 
+### Show Related card Funtinality Funtionality
+
 # up comming Featured
 
 ### Intregate payment method with ssl
 
-### add to cart and checkout
+### add to cart checkout
+
+### checkout

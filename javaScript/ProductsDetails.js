@@ -11,11 +11,15 @@ const productData = localStorage.getItem('selectedProduct');
 const setTitle = document.getElementById('product-name');
 const prodtctPrice = document.getElementById('price');
 const productImage = document.getElementById('product-image');
+const Productmodel = document.getElementById('showModel');
 
-const { title, price, category, Image, Rating } = JSON.parse(productData);
+const { title, price, category, Image, Rating, model } = JSON.parse(productData);
 // set date 
 setTitle.innerText += title;
 prodtctPrice.innerText = `BDT ${price}`;
+Productmodel.innerText = `
+${model || "No Model"}
+`
 const convertedPrice = parseFloat(price.replace(/,/g, ''));
 productImage.src = '.' + Image.img1;
 productImage.alt = title
